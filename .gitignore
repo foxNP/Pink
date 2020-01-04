@@ -1,0 +1,32 @@
+# phpstorm project files
+.idea
+.vagrant
+# netbeans project files
+nbproject
+
+.settings
+
+# windows thumbnail cache
+Thumbs.db
+
+# composer vendor dir
+/vendor
+node_modules
+
+/node_modules
+/composer.lock
+
+# composer itself is not needed
+composer.phar
+
+# Mac DS_Store Files
+.DS_Store
+
+# ignore files
+/files
+
+/runtime/*
+!*/.gitkeep
+*.bak
+© 2019 GitHub, Inc.
+
