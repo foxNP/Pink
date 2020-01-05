@@ -8,7 +8,12 @@
 <body>
 <header class="header">
     <div class="container">
-        <div class="header__logo">logo</div>
+        <div class="header__logo">
+            ​<picture>
+            <source srcset="logo-sm.svg" type="image/svg+xml" media="(min-width: 768px)">
+            <img src="logo-xs.svg" alt="logo">
+            </picture>
+        </div>
         <nav class="header__menu menu">
             <ul class="menu__list">
                 <li class="menu__item">
@@ -34,6 +39,9 @@
 <main class="main">
 <section class="get-app">
     <div class="get-app__inner">
+        <div class="get-app__title">
+            Взгляните на жизнь иначе!
+        </div>
         <a href="#" class="get-app__btn">Скачать приложение</a>
         <ul class="get-app__icons">
             <li class="get-app__icon"></li>
@@ -66,6 +74,62 @@
                 <h4 class="card__title">Заводит новых друзей</h4>
                 <div class="card__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</div>
             </div>
+        </div>
+        <div class="app-description__addition box-info">
+            <div class="box-info__img"><img src="#" alt=""></div>
+            <div class="box-info__title">
+                Эффект на 24 часа!
+            </div>
+            <div class="box-info__text">
+                Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+            </div>
+            <a href="#" class="box-info-link">Узнать больше об исследовании</a>
+        </div>
+    </section>
+    <section class="app-reviews">
+        <div class="app-reviews__item">
+            <div class="app-reviews__img"><img src="#" alt=""></div>
+            <div class="app-reviews__text">
+
+            </div>
+            <div class="app-reviews__name-user">
+
+            </div>
+            <div class="app-reviews__info-user">
+
+            </div>
+        </div>
+    </section>
+    <section class="app-price">
+        <table class="app-price__table">
+            <th class="app-price__name"></th>
+            <th class="app-price__base">База 1,99 USD</th>
+            <th class="app-price__standard">Стандарт 3,99 USD</th>
+            <th class="app-price__unlimited">Анлим 9,99 USD</th>
+            <tr>
+                <td>Розовый фильтр</td>
+                <td>V</td>
+                <td>V</td>
+                <td>V</td>
+            </tr>
+            <tr>
+                <td>Смайлики</td>
+                <td>X</td>
+                <td>V</td>
+                <td>V</td>
+            </tr>
+            <tr>
+                <td>Комментарии</td>
+                <td>X</td>
+                <td>X</td>
+                <td>V</td>
+            </tr>
+        </table>
+        <div class="app-price__slider">
+            <div class="">Стандарт 3,99 USD</div>
+            <div class="app-price__pink-filter">Розовый фильтр</div>
+            <div class="">Смайлики</div>
+            <div class="">Комментарии</div>
         </div>
     </section>
 </main>
