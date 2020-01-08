@@ -1,0 +1,26 @@
+.header {
+  background-color: rgba(178, 178, 178, 0.302);
+  height: 66px;
+  line-height: 18px;
+
+  &__menu {
+    @media screen and (min-width: $lg) {
+      margin-left: 170px;
+    }
+  }
+
+  @media screen and (min-width: $sm) {
+    height: 110px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+  }
+}
+
+
+
+

@@ -1,0 +1,53 @@
+.menu {
+
+  display: flex;
+
+  @media screen and (max-width: $lg) {
+    height: 100%;
+  }
+
+  @media screen and (min-width: $lg) {
+    flex-grow: 1;
+  }
+  &__list {
+    display: none;
+    list-style: none;
+    padding: 0;
+    @media screen and (min-width: $lg) {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    height: 100%;
+    padding: 0 20px;
+    margin-right: -20px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  &__btn--open {
+
+  }
+
+  &__btn--close {
+    display: none;
+  }
+
+  &__control {
+    @media screen and (min-width: $lg) {
+      display: none;
+    }
+  }
+
+  &__item a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+}

@@ -2,16 +2,18 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Pink</title>
     <link href="build/css/styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
 <header class="header">
-    <div class="container">
+    <div class="container header__row">
         <div class="header__logo">
-            ​<picture>
-            <source srcset="logo-sm.svg" type="image/svg+xml" media="(min-width: 768px)">
-            <img src="logo-xs.svg" alt="logo">
+            <picture>
+                <source srcset="./build/img/logo-xl.png" type="image/svg+xml" media="(min-width: 1200px)">
+                <source srcset="./build/img/logo-sm.png" type="image/svg+xml" media="(min-width: 660px)">
+                <img src="./build/img/logo-xs.png" alt="logo">
             </picture>
         </div>
         <nav class="header__menu menu">
@@ -26,33 +28,38 @@
                     <a href="#">Конкурс</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#">html academy</a>
+                    <a href="#">HTML academy</a>
                 </li>
             </ul>
+            <div class="menu__control">
+                <button type="button" class="menu__btn menu__btn--open">
+                    <span class="i-burger"></span>
+                </button>
+                <button type="button" class="menu__btn menu__btn--close">
+                    <span class="i-close"></span>
+                </button>
+            </div>
         </nav>
-        <div class="menu__control">
-            <button type="button" class="menu__open">o</button>
-            <button type="button" class="menu__close">x</button>
-        </div>
     </div>
 </header>
 <main class="main">
-<section class="get-app">
-    <div class="get-app__inner">
-        <div class="get-app__title">
-            Взгляните на жизнь иначе!
+    <div class="container">
+    <section class="get-app">
+        <div class="get-app__inner">
+            <div class="get-app__title">
+                Взгляните на жизнь иначе!
+            </div>
+            <a href="#" class="get-app__btn">Скачать приложение</a>
+            <ul class="get-app__icons">
+                <li class="get-app__icon"></li>
+                <li class="get-app__icon"></li>
+                <li class="get-app__icon"></li>
+            </ul>
+            <div class="get-app__content">
+                Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </div>
         </div>
-        <a href="#" class="get-app__btn">Скачать приложение</a>
-        <ul class="get-app__icons">
-            <li class="get-app__icon"></li>
-            <li class="get-app__icon"></li>
-            <li class="get-app__icon"></li>
-        </ul>
-        <div class="get-app__content">
-            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </div>
-    </div>
-</section>
+    </section>
     <section class="app-description">
         <div class="app-description__title">
             <span>Устали от серости мегаполиса?</span>
@@ -62,17 +69,23 @@
             <div class="card">
                 <div class="card__img"><img src="#" alt=""></div>
                 <h4 class="card__title">Поднимает настроение</h4>
-                <div class="card__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</div>
+                <div class="card__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+                    несколько кликов!
+                </div>
             </div>
             <div class="card">
                 <div class="card__img"><img src="#" alt=""></div>
                 <h4 class="card__title">Меняет мир вокруг</h4>
-                <div class="card__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</div>
+                <div class="card__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+                    эффект
+                </div>
             </div>
             <div class="card">
                 <div class="card__img"><img src="#" alt=""></div>
                 <h4 class="card__title">Заводит новых друзей</h4>
-                <div class="card__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</div>
+                <div class="card__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+                    новых
+                </div>
             </div>
         </div>
         <div class="app-description__addition box-info">
@@ -81,7 +94,8 @@
                 Эффект на 24 часа!
             </div>
             <div class="box-info__text">
-                Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+                Британские ученые провели исследования и доказали, что положительный эффект от использования приложения
+                длится целые сутки!
             </div>
             <a href="#" class="box-info-link">Узнать больше об исследовании</a>
         </div>
@@ -127,7 +141,7 @@
         </table>
         <div class="app-price__slider">
             <div class="">Стандарт 3,99 USD</div>
-            <div class="app-price__pink-filter">Розовый фильтр</div>
+            <div class="">Розовый фильтр</div>
             <div class="">Смайлики</div>
             <div class="">Комментарии</div>
         </div>
@@ -138,25 +152,27 @@
             Свяжитесь с нами!
         </div>
         <div class="app-contacts__wrapper">
-        <div class="app-contacts__call">
-            <h2>Звоните:</h2>>
-            <div>+7 (812) 555-66-66</div>
-        </div>
-        <div class="app-contacts__address">
-            <h2>ЗПриезжайте в гости:</h2>>
-            <div>+ул. Большая Конюшенная, 19/8</div>
-        </div>
-        <div class="app-contacts__mail">
-            <h2>Пишите:</h2>>
-            <div>mail@htmlacademy.ru</div>
-        </div>
+            <div class="app-contacts__call">
+                <h4>Звоните:</h4>
+                <span>+7 (812) 555-66-66</span>
+            </div>
+            <div class="app-contacts__address">
+                <h4>ЗПриезжайте в гости:</h4>>
+                <span>ул. Большая Конюшенная, 19/8</span>
+            </div>
+            <div class="app-contacts__mail">
+                <h4>Пишите:</h4>>
+                <span>mail@htmlacademy.ru</span>
+            </div>
         </div>
         <div class="app-contacts__map">
 
         </div>
     </section>
+    </div>
 </main>
 <footer class="footer">
+    <div class="container">
     <div class="footer__logo"></div>
     <ul class="footer__social social">
         <li class="social__item"></li>
@@ -164,6 +180,7 @@
         <li class="social__item"></li>
     </ul>
     <div class="footer__copyright copyright">Разработано <span class="copyright__img"></span></div>
+    </div>
 </footer>
 </body>
 </html>
