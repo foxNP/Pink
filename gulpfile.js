@@ -6,7 +6,7 @@ var gulp = require('gulp'),
 var path = {
     src: {
         style: '_assets/scss/styles.scss',
-        html: 'html/**/*.html'
+        html: 'html/pages/*.html'
     },
     build: {
         css: 'build/css/',

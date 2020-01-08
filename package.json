@@ -11,7 +11,7 @@
   "dependencies": {},
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-pagebuilder": "^0.1.4",
+    "gulp-pagebuilder": "https://github.com/arctic-hare/gulp-pagebuilder",
     "gulp-sass": "^4.0.2"
   }
 }
