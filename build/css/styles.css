@@ -414,3 +414,11 @@ body {
   .menu__item a {
     text-decoration: none;
     color: #ffffff; }
+
+.get-app {
+  background-image: url("../img/top-image-xl.png"); }
+
+.footer__wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between; }

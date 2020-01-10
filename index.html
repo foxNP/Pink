@@ -157,11 +157,11 @@
                 <span>+7 (812) 555-66-66</span>
             </div>
             <div class="app-contacts__address">
-                <h4>ЗПриезжайте в гости:</h4>>
+                <h4>Приезжайте в гости:</h4>
                 <span>ул. Большая Конюшенная, 19/8</span>
             </div>
             <div class="app-contacts__mail">
-                <h4>Пишите:</h4>>
+                <h4>Пишите:</h4>
                 <span>mail@htmlacademy.ru</span>
             </div>
         </div>
@@ -173,13 +173,21 @@
 </main>
 <footer class="footer">
     <div class="container">
-    <div class="footer__logo"></div>
+        <div class="footer__wrapper">
+    <div class="footer__logo">
+        <picture>
+            <source srcset="./build/img/logo-xl-footer.png" type="image/svg+xml" media="(min-width: 1200px)">
+            <source srcset="./build/img/logo-sm-footer.png" type="image/svg+xml" media="(min-width: 660px)">
+            <img src="./build/img/logo-xs-footer.png" alt="logo">
+        </picture>
+    </div>
     <ul class="footer__social social">
         <li class="social__item"></li>
         <li class="social__item"></li>
         <li class="social__item"></li>
     </ul>
     <div class="footer__copyright copyright">Разработано <span class="copyright__img"></span></div>
+    </div>
     </div>
 </footer>
 </body>
