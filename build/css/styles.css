@@ -363,10 +363,37 @@ body {
   height: 25px;
   width: 25px; }
 
+.i-youtube {
+  display: inline-block;
+  background-image: url("../img/icons/i_youtube.png");
+  height: 13px;
+  width: 15px; }
+
+.i-twitter {
+  display: inline-block;
+  background-image: url("../img/icons/i_twitter.png");
+  height: 14px;
+  width: 18px; }
+
+.i-facebook {
+  display: inline-block;
+  background-image: url("../img/icons/i_facebook.png");
+  height: 18px;
+  width: 9px; }
+
+.i-htmlacademy {
+  display: inline-block;
+  background-image: url("../img/icons/i_htmlacademy.png");
+  height: 34px;
+  width: 27px; }
+
 .header {
-  background-color: rgba(178, 178, 178, 0.302);
+  background-color: rgba(0, 0, 0, 0.302);
   height: 66px;
-  line-height: 18px; }
+  line-height: 18px;
+  position: absolute;
+  right: 0;
+  left: 0; }
   @media screen and (min-width: 1200px) {
     .header__menu {
       margin-left: 170px; } }
@@ -416,9 +443,59 @@ body {
     color: #ffffff; }
 
 .get-app {
-  background-image: url("../img/top-image-xl.png"); }
+  border-color: #19222b;
+  background: url("../img/smart-hand-xl.png") center bottom no-repeat, url("../img/top-image-xl.png") center bottom no-repeat;
+  background-size: auto auto, 100% auto;
+  height: 560px; }
+  .get-app__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; }
 
-.footer__wrapper {
+.footer__row {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between; }
+  flex-direction: column;
+  align-items: center;
+  padding-top: 64px;
+  padding-bottom: 40px; }
+
+.footer__logo {
+  margin-bottom: 40px; }
+
+.footer__social {
+  margin-bottom: 40px; }
+
+@media screen and (min-width: 660px) {
+  .footer__row {
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: 36px;
+    padding-bottom: 51px; } }
+
+@media screen and (min-width: 1200px) {
+  .footer__row {
+    padding-top: 70px;
+    padding-bottom: 87px; } }
+
+.social {
+  display: flex;
+  padding: 0;
+  margin-left: 0;
+  list-style: none; }
+  .social__item {
+    width: 51px;
+    height: 51px;
+    margin-right: 6px;
+    margin-left: 6px;
+    border-radius: 50%;
+    border: 4px solid #e9ebec;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+.copyright {
+  line-height: 18px;
+  display: flex;
+  align-items: center; }
+  .copyright__text {
+    margin-right: 15px; }
