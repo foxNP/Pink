@@ -3,8 +3,10 @@
   height: 66px;
   line-height: 18px;
   position: absolute;
+  top: 0;
   right: 0;
   left: 0;
+  z-index: 2;
 
   &__menu {
     @media screen and (min-width: $lg) {

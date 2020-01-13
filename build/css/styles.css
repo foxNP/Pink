@@ -354,46 +354,75 @@ body {
 .i-burger {
   display: inline-block;
   background-image: url("../img/icons/i_burger.png");
+  background-repeat: no-repeat;
   height: 25px;
   width: 50px; }
 
 .i-close {
   display: inline-block;
   background-image: url("../img/icons/i_close.png");
+  background-repeat: no-repeat;
   height: 25px;
   width: 25px; }
 
 .i-youtube {
   display: inline-block;
   background-image: url("../img/icons/i_youtube.png");
+  background-repeat: no-repeat;
   height: 13px;
   width: 15px; }
 
 .i-twitter {
   display: inline-block;
   background-image: url("../img/icons/i_twitter.png");
+  background-repeat: no-repeat;
   height: 14px;
   width: 18px; }
 
 .i-facebook {
   display: inline-block;
   background-image: url("../img/icons/i_facebook.png");
+  background-repeat: no-repeat;
   height: 18px;
   width: 9px; }
 
 .i-htmlacademy {
   display: inline-block;
   background-image: url("../img/icons/i_htmlacademy.png");
+  background-repeat: no-repeat;
   height: 34px;
   width: 27px; }
+
+.i-apple-logo {
+  display: inline-block;
+  background-image: url("../img/icons/i_apple-logo.png");
+  background-repeat: no-repeat;
+  height: 57px;
+  width: 48px; }
+
+.i-android-logo {
+  display: inline-block;
+  background-image: url("../img/icons/i_android-logo.png");
+  background-repeat: no-repeat;
+  height: 48px;
+  width: 43px; }
+
+.i-microsoft-logo {
+  display: inline-block;
+  background-image: url("../img/icons/i_microsoft-logo.png");
+  background-repeat: no-repeat;
+  height: 41px;
+  width: 44px; }
 
 .header {
   background-color: rgba(0, 0, 0, 0.302);
   height: 66px;
   line-height: 18px;
   position: absolute;
+  top: 0;
   right: 0;
-  left: 0; }
+  left: 0;
+  z-index: 2; }
   @media screen and (min-width: 1200px) {
     .header__menu {
       margin-left: 170px; } }
@@ -443,14 +472,106 @@ body {
     color: #ffffff; }
 
 .get-app {
-  border-color: #19222b;
+  background-color: #19222b;
   background: url("../img/smart-hand-xl.png") center bottom no-repeat, url("../img/top-image-xl.png") center bottom no-repeat;
   background-size: auto auto, 100% auto;
-  height: 560px; }
+  color: #ffffff; }
   .get-app__inner {
     display: flex;
+    width: 100%; }
+    @media screen and (min-width: 660px) {
+      .get-app__inner {
+        width: 300px; } }
+  .get-app__content {
+    margin-top: 66px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
     flex-direction: column;
-    justify-content: flex-end; }
+    background-color: #1d2631;
+    margin-right: -20px;
+    margin-left: -20px;
+    width: calc(100% + 40px); }
+    @media screen and (min-width: 660px) {
+      .get-app__content {
+        margin-top: 110px;
+        background-color: transparent;
+        width: 300px;
+        margin-right: 0;
+        margin-left: 0; } }
+  .get-app__title {
+    display: none; }
+    @media screen and (min-width: 660px) {
+      .get-app__title {
+        display: block;
+        text-align: center;
+        font-weight: 300;
+        padding-left: 28px;
+        padding-right: 28px; } }
+    @media (max-width: 1200px) and (min-width: 660px) {
+      .get-app__title {
+        margin-bottom: 30px;
+        font-size: 40px;
+        line-height: 48px; } }
+    @media screen and (min-width: 1200px) {
+      .get-app__title {
+        margin-top: 108px;
+        margin-bottom: 52px;
+        font-size: 50px;
+        line-height: 60px; } }
+  .get-app__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    line-height: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    height: 55px;
+    border: 3px solid #ffffff;
+    border-radius: 27px;
+    cursor: pointer;
+    margin-bottom: 32px; }
+    @media (min-width: 660px) and (max-width: 1200px) {
+      .get-app__btn {
+        font-size: 21px;
+        margin-bottom: 45px; } }
+    @media screen and (min-width: 1200px) {
+      .get-app__btn {
+        font-size: 21px;
+        margin-bottom: 67px; } }
+  .get-app__icons {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 0;
+    margin-bottom: 23px; }
+    @media (min-width: 660px) and (max-width: 1200px) {
+      .get-app__icons {
+        margin-bottom: 35px; } }
+    @media screen and (min-width: 1200px) {
+      .get-app__icons {
+        margin-bottom: 55px; } }
+  .get-app__icon {
+    margin-left: 18px;
+    margin-right: 18px; }
+  .get-app__text {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    text-align: center;
+    width: 230px; }
+    @media screen and (min-width: 1200px) {
+      .get-app__text {
+        display: flex;
+        font-size: 18px;
+        width: 100%; } }
+
+.app-price {
+  display: none; }
 
 .footer__row {
   display: flex;
