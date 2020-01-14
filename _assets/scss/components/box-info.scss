@@ -1,0 +1,10 @@
+.box-info {
+
+  &__img {
+    display: none;
+    @media screen and (min-width: $sm) {
+      display: block;
+    }
+  }
+
+}

@@ -423,6 +423,8 @@ body {
   right: 0;
   left: 0;
   z-index: 2; }
+  .header__logo {
+    padding-bottom: 15px; }
   @media screen and (min-width: 1200px) {
     .header__menu {
       margin-left: 170px; } }
@@ -473,17 +475,33 @@ body {
 
 .get-app {
   background-color: #19222b;
-  background: url("../img/smart-hand-xl.png") center bottom no-repeat, url("../img/top-image-xl.png") center bottom no-repeat;
+  background: url("../img/smart-hand-xs.png") left bottom no-repeat, url("../img/top-image-xs.png") center center no-repeat;
   background-size: auto auto, 100% auto;
-  color: #ffffff; }
+  color: #ffffff;
+  padding-top: 66px; }
+  @media screen and (min-width: 660px) {
+    .get-app {
+      padding-top: 110px; } }
+  @media (max-width: 1200px) and (min-width: 660px) {
+    .get-app {
+      background: url("../img/smart-hand-sm.png") center bottom no-repeat, url("../img/top-image-sm.png") center bottom no-repeat;
+      background-size: auto auto, 100% auto; } }
+  @media screen and (min-width: 1200px) {
+    .get-app {
+      background: url("../img/smart-hand-lg.png") center bottom no-repeat, url("../img/top-image-lg.png") center bottom no-repeat;
+      background-size: auto auto, 100% auto; } }
   .get-app__inner {
     display: flex;
-    width: 100%; }
+    width: 100%;
+    position: relative;
+    bottom: -270px;
+    height: 270px; }
     @media screen and (min-width: 660px) {
       .get-app__inner {
-        width: 300px; } }
+        width: 300px;
+        position: static;
+        height: auto; } }
   .get-app__content {
-    margin-top: 66px;
     z-index: 1;
     display: flex;
     align-items: center;
@@ -494,7 +512,6 @@ body {
     width: calc(100% + 40px); }
     @media screen and (min-width: 660px) {
       .get-app__content {
-        margin-top: 110px;
         background-color: transparent;
         width: 300px;
         margin-right: 0;
@@ -532,15 +549,18 @@ body {
     border: 3px solid #ffffff;
     border-radius: 27px;
     cursor: pointer;
-    margin-bottom: 32px; }
-    @media (min-width: 660px) and (max-width: 1200px) {
+    margin-bottom: 32px;
+    margin-top: 28px; }
+    @media screen and (min-width: 660px) {
       .get-app__btn {
-        font-size: 21px;
-        margin-bottom: 45px; } }
+        width: 100%;
+        margin-bottom: 47px;
+        margin-top: 0; } }
     @media screen and (min-width: 1200px) {
       .get-app__btn {
         font-size: 21px;
-        margin-bottom: 67px; } }
+        margin-bottom: 67px;
+        margin-top: 0; } }
   .get-app__icons {
     list-style: none;
     padding-left: 0;
@@ -548,13 +568,13 @@ body {
     justify-content: center;
     align-items: baseline;
     margin-top: 0;
-    margin-bottom: 23px; }
+    margin-bottom: 15px; }
     @media (min-width: 660px) and (max-width: 1200px) {
       .get-app__icons {
-        margin-bottom: 35px; } }
+        margin-bottom: 25px; } }
     @media screen and (min-width: 1200px) {
       .get-app__icons {
-        margin-bottom: 55px; } }
+        margin-bottom: 45px; } }
   .get-app__icon {
     margin-left: 18px;
     margin-right: 18px; }
@@ -563,15 +583,61 @@ body {
     line-height: 24px;
     font-weight: 300;
     text-align: center;
-    width: 230px; }
-    @media screen and (min-width: 1200px) {
+    width: 230px;
+    margin-bottom: 30px; }
+    @media screen and (min-width: 660px) {
       .get-app__text {
         display: flex;
         font-size: 18px;
         width: 100%; } }
+    @media (min-width: 660px) and (max-width: 1200px) {
+      .get-app__text {
+        margin-bottom: 110px; } }
+    @media screen and (min-width: 1200px) {
+      .get-app__text {
+        margin-bottom: 120px; } }
 
 .app-price {
   display: none; }
+
+.app-description {
+  padding-top: 270px; }
+  @media screen and (min-width: 660px) {
+    .app-description {
+      padding-top: 0; } }
+  .app-description__title {
+    margin-top: 40px;
+    margin-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+    width: 210px; }
+    @media (max-width: 1200px) and (min-width: 660px) {
+      .app-description__title {
+        margin-top: 55px;
+        margin-bottom: 55px;
+        font-size: 40px;
+        line-height: 48px;
+        width: 583px; } }
+    @media screen and (min-width: 1200px) {
+      .app-description__title {
+        margin-top: 75px;
+        margin-bottom: 70px;
+        font-size: 50px;
+        line-height: 60px;
+        width: 730px; } }
+  .app-description__paragraph-1 {
+    margin-top: 0;
+    margin-bottom: 25px; }
+    @media screen and (min-width: 660px) {
+      .app-description__paragraph-1 {
+        margin-bottom: 0; } }
+  .app-description__paragraph-2 {
+    margin-top: 0;
+    margin-bottom: 0; }
 
 .footer__row {
   display: flex;

@@ -28,7 +28,7 @@
                     <a href="#">Конкурс</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#">HTML academy</a>
+                    <a href="#">HTML Academy</a>
                 </li>
             </ul>
             <div class="menu__control">
@@ -72,8 +72,8 @@
     <section class="app-description">
         <div class="container">
         <div class="app-description__title">
-            <span>Устали от серости мегаполиса?</span>
-            <span>Нам есть, что вам предложить!</span>
+            <p class="app-description__paragraph-1">Устали от серости мегаполиса?</p>
+            <p class="app-description__paragraph-2">Нам есть, что вам предложить!</p>
         </div>
         <div class="app-description__cards">
             <div class="card">
@@ -99,7 +99,12 @@
             </div>
         </div>
         <div class="app-description__addition box-info">
-            <div class="box-info__img"><img src="#" alt=""></div>
+            <div class="box-info__img">
+                <picture>
+                <source srcset="./build/img/time-lg.png" type="image/svg+xml" media="(min-width: 1200px)">
+                <img src="./build/img/time-sm.png" alt="logo">
+                </picture>
+            </div>
             <div class="box-info__title">
                 Эффект на 24 часа!
             </div>

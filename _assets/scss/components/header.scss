@@ -8,6 +8,10 @@
   left: 0;
   z-index: 2;
 
+  &__logo {
+    padding-bottom: 15px;
+  }
+
   &__menu {
     @media screen and (min-width: $lg) {
       margin-left: 170px;

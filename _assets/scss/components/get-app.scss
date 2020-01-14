@@ -1,21 +1,42 @@
 .get-app {
   background-color: #19222b;
-  background: url("../img/smart-hand-xl.png") center bottom no-repeat,
-  url("../img/top-image-xl.png") center bottom no-repeat;
+  background: url("../img/smart-hand-xs.png") left bottom no-repeat,
+  url("../img/top-image-xs.png") center center no-repeat;
   background-size: auto auto, 100% auto;
   color: #ffffff;
+  padding-top: 66px;
+
+  @media screen and (min-width: $sm) {
+    padding-top: 110px;
+  }
+
+  @media (max-width: $lg) and (min-width: $sm)  {
+    background: url("../img/smart-hand-sm.png") center bottom no-repeat,
+    url("../img/top-image-sm.png") center bottom no-repeat;
+    background-size: auto auto, 100% auto;
+  }
+
+  @media screen and (min-width: $lg) {
+    background: url("../img/smart-hand-lg.png") center bottom no-repeat,
+    url("../img/top-image-lg.png") center bottom no-repeat;
+    background-size: auto auto, 100% auto;
+  }
 
   &__inner {
     display: flex;
     width: 100%;
+    position: relative;
+    bottom: -270px;
+    height: 270px;
 
     @media screen and (min-width: $sm) {
       width: 300px;
+      position: static;
+      height: auto;
     }
   }
 
   &__content {
-    margin-top: 66px;
     z-index: 1;
     display: flex;
     align-items: center;
@@ -26,7 +47,6 @@
     width: calc(100% + 40px);
 
     @media screen and (min-width: $sm) {
-      margin-top: 110px;
       background-color: transparent;
       width: 300px;
       margin-right: 0;
@@ -74,15 +94,18 @@
     border-radius: 27px;
     cursor: pointer;
     margin-bottom: 32px;
+    margin-top: 28px;
 
-    @media (min-width: $sm) and (max-width: $lg) {
-        font-size: 21px;
-        margin-bottom: 45px;
+    @media screen and (min-width: $sm) {
+      width: 100%;
+      margin-bottom: 47px;
+      margin-top: 0;
     }
 
     @media screen and (min-width: $lg) {
-        font-size: 21px;
-        margin-bottom: 67px;
+      font-size: 21px;
+      margin-bottom: 67px;
+      margin-top: 0;
     }
   }
 
@@ -93,14 +116,14 @@
     justify-content: center;
     align-items: baseline;
     margin-top: 0;
-    margin-bottom: 23px;
+    margin-bottom: 15px;
 
     @media (min-width: $sm) and (max-width: $lg) {
-      margin-bottom: 35px;
+      margin-bottom: 25px;
     }
 
     @media screen and (min-width: $lg) {
-      margin-bottom: 55px;
+      margin-bottom: 45px;
     }
   }
 
@@ -115,11 +138,19 @@
     font-weight: 300;
     text-align: center;
     width: 230px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $sm) {
+      display: flex;
+      font-size: 18px;
+      width: 100%;
+    }
+    @media (min-width: $sm) and (max-width: $lg) {
+      margin-bottom: 110px;
+    }
 
     @media screen and (min-width: $lg) {
-        display: flex;
-        font-size: 18px;
-        width: 100%;
+      margin-bottom: 120px;
     }
   }
 }

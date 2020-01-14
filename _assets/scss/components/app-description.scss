@@ -1,0 +1,52 @@
+.app-description {
+  padding-top: 270px;
+
+  @media screen and (min-width: $sm) {
+  padding-top: 0;
+  }
+
+  &__title {
+    margin-top: 40px;
+    margin-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+    width: 210px;
+
+    @media (max-width: $lg) and (min-width: $sm)  {
+      margin-top: 55px;
+      margin-bottom: 55px;
+      font-size: 40px;
+      line-height: 48px;
+      width: 583px;
+    }
+
+    @media screen and (min-width: $lg) {
+      margin-top: 75px;
+      margin-bottom: 70px;
+      font-size: 50px;
+      line-height: 60px;
+      width: 730px;
+    }f0f0f0
+
+  }
+
+  &__paragraph-1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+
+    @media screen and (min-width: $sm) {
+      margin-bottom: 0;
+    }
+
+  }
+
+  &__paragraph-2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+}
