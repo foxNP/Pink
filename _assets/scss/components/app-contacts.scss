@@ -1,0 +1,83 @@
+.app-contacts {
+  padding-top: 10px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  color: #d22856;
+  text-align: center;
+
+  @media screen and (min-width: $lg) {
+    padding-top: 35px;
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 0;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 13px;
+
+    @media (max-width: $lg) and (min-width: $sm) {
+      margin-bottom: 15px;
+    }
+
+    @media screen and (min-width: $lg) {
+      margin-bottom: 35px;
+    }
+  }
+    &__title {
+      color: #000000;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 45px;
+      width: 225px;
+
+      @media (max-width: $lg) and (min-width: $sm) {
+        font-size: 40px;
+        line-height: 45px;
+        width: 370px;
+        margin-bottom: 60px;
+      }
+
+      @media screen and (min-width: $lg) {
+        font-size: 50px;
+        line-height: 60px;
+        width: 465px;
+        margin-bottom: 70px;
+      }
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+
+      @media screen and (min-width: $sm) {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+    }
+
+    &__item {
+      padding-right: 10px;
+      padding-left: 10px;
+      margin-bottom: 32px;
+
+      @media (max-width: $lg) and (min-width: $sm) {
+        width: 50%;
+        margin-bottom: 63px;
+      }
+
+    }
+
+    &__item--address {
+        order: 1;
+
+      @media screen and (min-width: $lg) {
+        order: 0;
+      }
+    }
+
+  }

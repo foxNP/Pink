@@ -5,6 +5,10 @@
   background-size: auto auto, 100% auto;
   color: #ffffff;
   padding-top: 66px;
+  margin-bottom: 270px;
+  min-height: 462px;
+  display: flex;
+  align-items: flex-end;
 
   @media screen and (min-width: $sm) {
     padding-top: 110px;
@@ -12,14 +16,17 @@
 
   @media (max-width: $lg) and (min-width: $sm)  {
     background: url("../img/smart-hand-sm.png") center bottom no-repeat,
-    url("../img/top-image-sm.png") center bottom no-repeat;
+    url("../img/top-image-sm.png") right bottom no-repeat;
     background-size: auto auto, 100% auto;
+    margin-bottom: 0;
+
   }
 
   @media screen and (min-width: $lg) {
     background: url("../img/smart-hand-lg.png") center bottom no-repeat,
     url("../img/top-image-lg.png") center bottom no-repeat;
     background-size: auto auto, 100% auto;
+    margin-bottom: 0;
   }
 
   &__inner {
@@ -45,6 +52,7 @@
     margin-right: -20px;
     margin-left: -20px;
     width: calc(100% + 40px);
+
 
     @media screen and (min-width: $sm) {
       background-color: transparent;

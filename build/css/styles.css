@@ -478,18 +478,24 @@ body {
   background: url("../img/smart-hand-xs.png") left bottom no-repeat, url("../img/top-image-xs.png") center center no-repeat;
   background-size: auto auto, 100% auto;
   color: #ffffff;
-  padding-top: 66px; }
+  padding-top: 66px;
+  margin-bottom: 270px;
+  min-height: 462px;
+  display: flex;
+  align-items: flex-end; }
   @media screen and (min-width: 660px) {
     .get-app {
       padding-top: 110px; } }
   @media (max-width: 1200px) and (min-width: 660px) {
     .get-app {
-      background: url("../img/smart-hand-sm.png") center bottom no-repeat, url("../img/top-image-sm.png") center bottom no-repeat;
-      background-size: auto auto, 100% auto; } }
+      background: url("../img/smart-hand-sm.png") center bottom no-repeat, url("../img/top-image-sm.png") right bottom no-repeat;
+      background-size: auto auto, 100% auto;
+      margin-bottom: 0; } }
   @media screen and (min-width: 1200px) {
     .get-app {
       background: url("../img/smart-hand-lg.png") center bottom no-repeat, url("../img/top-image-lg.png") center bottom no-repeat;
-      background-size: auto auto, 100% auto; } }
+      background-size: auto auto, 100% auto;
+      margin-bottom: 0; } }
   .get-app__inner {
     display: flex;
     width: 100%;
@@ -601,7 +607,7 @@ body {
   display: none; }
 
 .app-description {
-  padding-top: 270px; }
+  display: flex; }
   @media screen and (min-width: 660px) {
     .app-description {
       padding-top: 0; } }
@@ -638,6 +644,77 @@ body {
   .app-description__paragraph-2 {
     margin-top: 0;
     margin-bottom: 0; }
+
+.box-info {
+  background-color: #f0f0f0; }
+  .box-info__img {
+    display: none; }
+    @media screen and (min-width: 660px) {
+      .box-info__img {
+        display: block; } }
+
+.app-contacts {
+  padding-top: 10px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  color: #d22856;
+  text-align: center; }
+  @media screen and (min-width: 1200px) {
+    .app-contacts {
+      padding-top: 35px; } }
+  .app-contacts__heading {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 0;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 13px; }
+    @media (max-width: 1200px) and (min-width: 660px) {
+      .app-contacts__heading {
+        margin-bottom: 15px; } }
+    @media screen and (min-width: 1200px) {
+      .app-contacts__heading {
+        margin-bottom: 35px; } }
+  .app-contacts__title {
+    color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 45px;
+    width: 225px; }
+    @media (max-width: 1200px) and (min-width: 660px) {
+      .app-contacts__title {
+        font-size: 40px;
+        line-height: 45px;
+        width: 370px;
+        margin-bottom: 60px; } }
+    @media screen and (min-width: 1200px) {
+      .app-contacts__title {
+        font-size: 50px;
+        line-height: 60px;
+        width: 465px;
+        margin-bottom: 70px; } }
+  .app-contacts__content {
+    display: flex;
+    flex-direction: column; }
+    @media screen and (min-width: 660px) {
+      .app-contacts__content {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap; } }
+  .app-contacts__item {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 32px; }
+    @media (max-width: 1200px) and (min-width: 660px) {
+      .app-contacts__item {
+        width: 50%;
+        margin-bottom: 63px; } }
+  .app-contacts__item--address {
+    order: 1; }
+    @media screen and (min-width: 1200px) {
+      .app-contacts__item--address {
+        order: 0; } }
 
 .footer__row {
   display: flex;

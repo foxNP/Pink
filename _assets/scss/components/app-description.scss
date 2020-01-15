@@ -1,5 +1,5 @@
 .app-description {
-  padding-top: 270px;
+  display: flex;
 
   @media screen and (min-width: $sm) {
   padding-top: 0;
@@ -30,7 +30,7 @@
       font-size: 50px;
       line-height: 60px;
       width: 730px;
-    }f0f0f0
+    }
 
   }
 
