@@ -1,0 +1,64 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+  @media screen and (min-width: $sm) {
+    width: 294px;
+  }
+
+  &__img {
+    display: none;
+
+    @media screen and (min-width: $lg) {
+      display: block;
+      margin-bottom: 45px;
+    }
+  }
+
+  &__img--mobile {
+    display: block;
+    order: 1;
+
+    @media screen and (min-width: $sm)  {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    @media screen and (min-width: $lg) {
+      position: static;
+      order: 0;
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 10px;
+    font-weight: 700;
+    margin-top: 86px;
+    margin-bottom: 18px;
+
+    @media screen and (min-width: $lg) {
+      font-size: 30px;
+      line-height: 30px;
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__text {
+
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    padding: 0 12px;
+
+    @media screen and (min-width: $lg) {
+      padding-right: 25px;
+      padding-left: 25px;
+    }
+  }
+}

@@ -77,21 +77,27 @@
         </div>
         <div class="app-description__cards">
             <div class="card">
-                <div class="card__img"><img src="#" alt=""></div>
+                <div class="card__img"><img src="./build/img/phone-1-lg.png" alt=""></div>
                 <h4 class="card__title">Поднимает настроение</h4>
                 <div class="card__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
                     несколько кликов!
                 </div>
             </div>
             <div class="card">
-                <div class="card__img"><img src="#" alt=""></div>
+                <div class="card__img"><img src="./build/img/phone-2-lg.png" alt=""></div>
                 <h4 class="card__title">Меняет мир вокруг</h4>
                 <div class="card__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
                     эффект
                 </div>
             </div>
             <div class="card">
-                <div class="card__img"><img src="#" alt=""></div>
+                <div class="card__img card__img--mobile">
+                    <picture>
+                        <source srcset="./build/img/phone-3-lg.png" type="image/svg+xml" media="(min-width: 1200px)">
+                        <source srcset="./build/img/phone-3-sm.png" type="image/svg+xml" media="(min-width: 660px)">
+                        <img src="./build/img/phone-3-xs.png" alt="logo">
+                    </picture>
+                </div>
                 <h4 class="card__title">Заводит новых друзей</h4>
                 <div class="card__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
                     новых
@@ -187,12 +193,12 @@
             </div>
         </div>
         </div>
-        <svg deg="180" version="1.1"  width="100%" height="100px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-             xml:space="preserve" viewBox="0 0 100 100" preserveAspectRatio="none" >
-
-<polygon fill="red" points="0,100 50,0 100,100"/>
-</svg>
-            <div id="map">
+            <div id="map" class="map">
+                <div class="map__decor">
+                    <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" viewBox="0 0 100 102" preserveAspectRatio="none">
+                        <path d="M0 0 L50 100 L100 0 Z"></path>
+                    </svg>
+                </div>
                 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=ee84bb87-99fd-4001-95f7-8fa65d292808" type="text/javascript"></script>
             </div>
     </section>

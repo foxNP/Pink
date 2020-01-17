@@ -631,7 +631,7 @@ body {
     @media screen and (min-width: 1200px) {
       .app-description__title {
         margin-top: 75px;
-        margin-bottom: 70px;
+        margin-bottom: 75px;
         font-size: 50px;
         line-height: 60px;
         width: 730px; } }
@@ -644,6 +644,64 @@ body {
   .app-description__paragraph-2 {
     margin-top: 0;
     margin-bottom: 0; }
+  .app-description__cards {
+    position: relative; }
+    @media screen and (min-width: 1200px) {
+      .app-description__cards {
+        display: flex;
+        justify-content: space-between; } }
+  @media screen and (min-width: 1200px) {
+    .app-description__addition {
+      margin-top: 67px; } }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center; }
+  @media screen and (min-width: 660px) {
+    .card {
+      width: 294px; } }
+  .card__img {
+    display: none; }
+    @media screen and (min-width: 1200px) {
+      .card__img {
+        display: block;
+        margin-bottom: 45px; } }
+  .card__img--mobile {
+    display: block;
+    order: 1; }
+    @media screen and (min-width: 660px) {
+      .card__img--mobile {
+        position: absolute;
+        top: 0;
+        left: 0; } }
+    @media screen and (min-width: 1200px) {
+      .card__img--mobile {
+        position: static;
+        order: 0; } }
+  .card__title {
+    font-size: 18px;
+    line-height: 10px;
+    font-weight: 700;
+    margin-top: 86px;
+    margin-bottom: 18px; }
+    @media screen and (min-width: 1200px) {
+      .card__title {
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 25px; } }
+  .card__text {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    padding: 0 12px; }
+    @media screen and (min-width: 1200px) {
+      .card__text {
+        padding-right: 25px;
+        padding-left: 25px; } }
 
 .box-info {
   background-color: #f0f0f0; }
@@ -726,15 +784,32 @@ body {
       .app-contacts__item--address {
         order: 0; } }
 
-#map {
+.map {
+  position: relative;
   width: 100%;
   height: 200px; }
   @media screen and (min-width: 660px) {
-    #map {
+    .map {
       height: 375px; } }
   @media screen and (min-width: 1200px) {
-    #map {
+    .map {
       height: 500px; } }
+  .map__decor {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 33px;
+    z-index: 1; }
+
+svg {
+  width: 100%;
+  height: 33px; }
+  @media (max-width: 1200px) and (min-width: 660px) {
+    svg {
+      height: 68px; } }
+  @media screen and (min-width: 1200px) {
+    svg {
+      height: 100px; } }
 
 .footer__row {
   display: flex;

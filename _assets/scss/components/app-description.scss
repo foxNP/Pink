@@ -26,7 +26,7 @@
 
     @media screen and (min-width: $lg) {
       margin-top: 75px;
-      margin-bottom: 70px;
+      margin-bottom: 75px;
       font-size: 50px;
       line-height: 60px;
       width: 730px;
@@ -49,4 +49,18 @@
     margin-bottom: 0;
   }
 
+  &__cards {
+    position: relative;
+
+    @media screen and (min-width: $lg) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__addition {
+    @media screen and (min-width: $lg) {
+      margin-top: 67px;
+    }
+  }
 }
