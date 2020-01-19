@@ -17,15 +17,15 @@
     width: 210px;
 
     @media (max-width: $lg) and (min-width: $sm)  {
-      margin-top: 55px;
-      margin-bottom: 55px;
+      margin-top: 50px;
+      margin-bottom: 50px;
       font-size: 40px;
       line-height: 48px;
       width: 583px;
     }
 
     @media screen and (min-width: $lg) {
-      margin-top: 75px;
+      margin-top: 67px;
       margin-bottom: 75px;
       font-size: 50px;
       line-height: 60px;
@@ -52,9 +52,22 @@
   &__cards {
     position: relative;
 
+    @media screen and (min-width: $sm) {
+      padding-left: 311px;
+      width: 620px;
+      min-height: 489px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     @media screen and (min-width: $lg) {
       display: flex;
       justify-content: space-between;
+      padding-left: 0;
+      margin-left: 0;
+      margin-right: 0;
+      width: auto;
+      min-height: auto;
     }
   }
 

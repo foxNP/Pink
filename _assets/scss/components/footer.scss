@@ -1,33 +1,53 @@
 .footer {
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: $sm) {
+    padding-top: 36px;
+    padding-bottom: 38px;
+  }
+
+  @media screen and (min-width: $lg) {
+    padding-top: 72px;
+    padding-bottom: 74px;
+  }
+
   &__row {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 64px;
-    padding-bottom: 40px;
+
+
+    @media screen and (min-width: $sm) {
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
   }
 
   &__logo {
-    margin-bottom: 40px;
+
+    margin-bottom: 33px;
+
+    @media screen and (min-width: $sm) {
+      margin-bottom: 5px;
+    }
+
+    @media screen and (min-width: $lg) {
+      margin-right: 5px;
+    }
   }
 
   &__social {
-    margin-bottom: 40px;
-  }
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 33px;
 
-  @media screen and (min-width: $sm) {
-    &__row {
-      justify-content: space-between;
-      flex-direction: row;
-      padding-top: 36px;
-      padding-bottom: 51px;
+    @media screen and (min-width: $sm) {
+      margin-right: 17px;
+      margin-bottom: 0;
     }
   }
 
-  @media screen and (min-width: $lg) {
-    &__row {
-      padding-top: 70px;
-      padding-bottom: 87px;
-    }
-  }
 }

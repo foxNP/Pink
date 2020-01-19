@@ -6,6 +6,11 @@
 
   @media screen and (min-width: $sm) {
     width: 294px;
+    text-align: left;
+  }
+
+  @media screen and (min-width: $lg) {
+    text-align: center;
   }
 
   &__img {
@@ -23,7 +28,7 @@
 
     @media screen and (min-width: $sm)  {
       position: absolute;
-      top: 0;
+      bottom: 0;
       left: 0;
     }
 
@@ -34,19 +39,28 @@
   }
 
   &__title {
+    width: 100%;
     font-size: 18px;
     line-height: 10px;
     font-weight: 700;
-    margin-top: 86px;
+    margin-top: 0;
     margin-bottom: 18px;
+
+    @media screen and (min-width: $sm) {
+      margin-bottom: 19px;
+      padding-right: 12px;
+      padding-left: 12px;
+    }
 
     @media screen and (min-width: $lg) {
       font-size: 30px;
       line-height: 30px;
       font-weight: 700;
-      margin-top: 0;
       margin-bottom: 25px;
+      padding-right: 0;
+      padding-left: 0;
     }
+
   }
 
   &__text {
@@ -54,9 +68,12 @@
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
-    padding: 0 12px;
+    padding-right: 12px;
+    padding-left: 12px;
 
     @media screen and (min-width: $lg) {
+      font-size: 18px;
+      line-height: 30px;
       padding-right: 25px;
       padding-left: 25px;
     }
