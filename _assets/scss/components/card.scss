@@ -5,7 +5,7 @@
   align-items: center;
 
   @media screen and (min-width: $sm) {
-    width: 294px;
+    width: 335px;
     text-align: left;
   }
 
@@ -18,23 +18,34 @@
 
     @media screen and (min-width: $lg) {
       display: block;
-      margin-bottom: 45px;
+      margin-bottom: 55px;
+      height: 302px;
+      width: auto;
     }
   }
 
   &__img--mobile {
     display: block;
     order: 1;
+    margin-top: 45px;
+    height: 276px;
+    width: auto;
 
-    @media screen and (min-width: $sm)  {
+    @media (min-width: $sm) and (max-width: $lg)  {
       position: absolute;
       bottom: 0;
       left: 0;
+      height: 481px;
+      width: auto;
+      margin-top: 0;
     }
 
     @media screen and (min-width: $lg) {
       position: static;
       order: 0;
+      height: 302px;
+      width: auto;
+      margin-top: 0;
     }
   }
 
@@ -57,8 +68,6 @@
       line-height: 30px;
       font-weight: 700;
       margin-bottom: 25px;
-      padding-right: 0;
-      padding-left: 0;
     }
 
   }

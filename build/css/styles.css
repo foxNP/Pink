@@ -607,12 +607,16 @@ body {
   display: none; }
 
 .app-description {
-  display: flex; }
-  @media screen and (min-width: 660px) {
+  padding-top: 40px;
+  background-color: #f0f0f0; }
+  @media (min-width: 660px) and (max-width: 1200px) {
     .app-description {
-      padding-top: 0; } }
+      padding-top: 50px; } }
+  @media screen and (min-width: 1200px) {
+    .app-description {
+      padding-top: 67px; } }
   .app-description__title {
-    margin-top: 40px;
+    margin-top: 0;
     margin-bottom: 35px;
     margin-left: auto;
     margin-right: auto;
@@ -621,16 +625,14 @@ body {
     line-height: 30px;
     font-weight: 300;
     width: 210px; }
-    @media (max-width: 1200px) and (min-width: 660px) {
+    @media (min-width: 660px) and (max-width: 1200px) {
       .app-description__title {
-        margin-top: 50px;
         margin-bottom: 50px;
         font-size: 40px;
         line-height: 48px;
         width: 583px; } }
     @media screen and (min-width: 1200px) {
       .app-description__title {
-        margin-top: 67px;
         margin-bottom: 75px;
         font-size: 50px;
         line-height: 60px;
@@ -645,10 +647,14 @@ body {
     margin-top: 0;
     margin-bottom: 0; }
   .app-description__cards {
-    position: relative; }
+    position: relative;
+    padding-top: 46px;
+    padding-bottom: 0; }
     @media screen and (min-width: 660px) {
       .app-description__cards {
-        padding-left: 311px;
+        padding-left: 295px;
+        padding-top: 36px;
+        padding-bottom: 42px;
         width: 620px;
         min-height: 489px;
         margin-left: auto;
@@ -658,13 +664,20 @@ body {
         display: flex;
         justify-content: space-between;
         padding-left: 0;
+        padding-top: 0;
+        padding-bottom: 67px;
         margin-left: 0;
         margin-right: 0;
         width: auto;
         min-height: auto; } }
-  @media screen and (min-width: 1200px) {
-    .app-description__addition {
-      margin-top: 67px; } }
+  .app-description__card {
+    margin-top: 39px; }
+    @media screen and (min-width: 660px) {
+      .app-description__card {
+        margin-top: 42px; } }
+    @media screen and (min-width: 1200px) {
+      .app-description__card {
+        margin-top: 0; } }
 
 .card {
   display: flex;
@@ -673,7 +686,7 @@ body {
   align-items: center; }
   @media screen and (min-width: 660px) {
     .card {
-      width: 294px;
+      width: 335px;
       text-align: left; } }
   @media screen and (min-width: 1200px) {
     .card {
@@ -683,19 +696,30 @@ body {
     @media screen and (min-width: 1200px) {
       .card__img {
         display: block;
-        margin-bottom: 45px; } }
+        margin-bottom: 55px;
+        height: 302px;
+        width: auto; } }
   .card__img--mobile {
     display: block;
-    order: 1; }
-    @media screen and (min-width: 660px) {
+    order: 1;
+    margin-top: 45px;
+    height: 276px;
+    width: auto; }
+    @media (min-width: 660px) and (max-width: 1200px) {
       .card__img--mobile {
         position: absolute;
         bottom: 0;
-        left: 0; } }
+        left: 0;
+        height: 481px;
+        width: auto;
+        margin-top: 0; } }
     @media screen and (min-width: 1200px) {
       .card__img--mobile {
         position: static;
-        order: 0; } }
+        order: 0;
+        height: 302px;
+        width: auto;
+        margin-top: 0; } }
   .card__title {
     width: 100%;
     font-size: 18px;
@@ -713,9 +737,7 @@ body {
         font-size: 30px;
         line-height: 30px;
         font-weight: 700;
-        margin-bottom: 25px;
-        padding-right: 0;
-        padding-left: 0; } }
+        margin-bottom: 25px; } }
   .card__text {
     font-size: 14px;
     line-height: 24px;
@@ -730,12 +752,21 @@ body {
         padding-left: 25px; } }
 
 .box-info {
-  background-color: #f0f0f0; }
-  .box-info__img {
-    display: none; }
-    @media screen and (min-width: 660px) {
+  display: none; }
+  @media screen and (min-width: 660px) {
+    .box-info {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 58px;
+      width: 620px;
+      margin-left: auto;
+      margin-right: auto; } }
+  @media screen and (min-width: 1200px) {
+    .box-info {
+      padding-top: 0;
+      width: 100%; }
       .box-info__img {
-        display: block; } }
+        margin-left: 7px; } }
 
 .app-contacts {
   padding-top: 10px;

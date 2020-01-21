@@ -1,12 +1,18 @@
 .app-description {
-  display: flex;
+  padding-top: 40px;
+  background-color: #f0f0f0;
 
-  @media screen and (min-width: $sm) {
-  padding-top: 0;
+  @media (min-width: $sm) and (max-width: $lg)  {
+    padding-top: 50px;
   }
 
+  @media screen and (min-width: $lg) {
+    padding-top: 67px;
+  }
+
+
   &__title {
-    margin-top: 40px;
+    margin-top: 0;
     margin-bottom: 35px;
     margin-left: auto;
     margin-right: auto;
@@ -16,8 +22,7 @@
     font-weight: 300;
     width: 210px;
 
-    @media (max-width: $lg) and (min-width: $sm)  {
-      margin-top: 50px;
+    @media (min-width: $sm) and (max-width: $lg)  {
       margin-bottom: 50px;
       font-size: 40px;
       line-height: 48px;
@@ -25,7 +30,6 @@
     }
 
     @media screen and (min-width: $lg) {
-      margin-top: 67px;
       margin-bottom: 75px;
       font-size: 50px;
       line-height: 60px;
@@ -51,9 +55,13 @@
 
   &__cards {
     position: relative;
+    padding-top: 46px;
+    padding-bottom: 0;
 
     @media screen and (min-width: $sm) {
-      padding-left: 311px;
+      padding-left: 295px;
+      padding-top: 36px;
+      padding-bottom: 42px;
       width: 620px;
       min-height: 489px;
       margin-left: auto;
@@ -64,6 +72,8 @@
       display: flex;
       justify-content: space-between;
       padding-left: 0;
+      padding-top: 0;
+      padding-bottom: 67px;
       margin-left: 0;
       margin-right: 0;
       width: auto;
@@ -71,9 +81,17 @@
     }
   }
 
-  &__addition {
-    @media screen and (min-width: $lg) {
-      margin-top: 67px;
+  &__card {
+    margin-top: 39px;
+
+    @media screen and (min-width: $sm) {
+      margin-top: 42px;
     }
+
+    @media screen and (min-width: $lg) {
+      margin-top: 0;
+    }
+
   }
+
 }
