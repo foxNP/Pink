@@ -70,12 +70,15 @@
         </div>
     </section>
     <section class="app-description">
-        <div class="container">
         <div class="app-description__title">
-            <p class="app-description__paragraph-1">Устали от серости мегаполиса?</p>
-            <p class="app-description__paragraph-2">Нам есть, что вам предложить!</p>
+            <div class="container app-description__container-title">
+              <p class="app-description__paragraph-1">Устали от серости мегаполиса?</p>
+              <p class="app-description__paragraph-2">Нам есть, что вам<br> предложить!</p>
+            </div>
         </div>
         <div class="app-description__cards">
+            <div class="container">
+                <div class="app-description__cards-inner">
             <div class="card app-description__card">
                 <div class="card__img"><img src="./build/img/phone-1-lg.png" alt=""></div>
                 <h4 class="card__title">Поднимает настроение</h4>
@@ -103,15 +106,18 @@
                     новых
                 </div>
             </div>
+            </div>
+            </div>
         </div>
         <div class="app-description__addition box-info">
+            <div class="container box-info__container">
             <div class="box-info__img">
                 <picture>
                 <source srcset="./build/img/time-lg.png" type="image/svg+xml" media="(min-width: 1200px)">
                 <img src="./build/img/time-sm.png" alt="logo">
                 </picture>
             </div>
-            <div class="box-info__text">
+            <div class="box-info__content">
             <div class="box-info__title">
                 Эффект на 24 часа!
             </div>
@@ -119,7 +125,7 @@
                 Британские ученые провели исследования и доказали, что положительный эффект от использования приложения
                 длится целые сутки!
             </div>
-            <a href="#" class="box-info-link">Узнать больше об исследовании</a>
+            <a href="#" class="box-info__link">Узнать больше об исследовании</a>
             </div>
         </div>
         </div>
@@ -139,6 +145,7 @@
             <div class="app-reviews__info-user">
                 25 лет, водитель трамвая
             </div>
+        </div>
         </div>
     </section>
     <section class="app-price">

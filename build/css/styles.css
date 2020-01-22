@@ -607,36 +607,33 @@ body {
   display: none; }
 
 .app-description {
-  padding-top: 40px;
-  background-color: #f0f0f0; }
+  padding-top: 40px; }
   @media (min-width: 660px) and (max-width: 1200px) {
     .app-description {
       padding-top: 50px; } }
   @media screen and (min-width: 1200px) {
     .app-description {
       padding-top: 67px; } }
-  .app-description__title {
+  .app-description__container-title {
     margin-top: 0;
-    margin-bottom: 35px;
+    padding-bottom: 35px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     font-size: 24px;
     line-height: 30px;
     font-weight: 300;
-    width: 210px; }
+    width: 100%; }
     @media (min-width: 660px) and (max-width: 1200px) {
-      .app-description__title {
-        margin-bottom: 50px;
+      .app-description__container-title {
+        padding-bottom: 40px;
         font-size: 40px;
-        line-height: 48px;
-        width: 583px; } }
+        line-height: 48px; } }
     @media screen and (min-width: 1200px) {
-      .app-description__title {
-        margin-bottom: 75px;
+      .app-description__container-title {
+        padding-bottom: 75px;
         font-size: 50px;
-        line-height: 60px;
-        width: 730px; } }
+        line-height: 60px; } }
   .app-description__paragraph-1 {
     margin-top: 0;
     margin-bottom: 25px; }
@@ -647,29 +644,28 @@ body {
     margin-top: 0;
     margin-bottom: 0; }
   .app-description__cards {
+    background-color: #f0f0f0; }
+  .app-description__cards-inner {
     position: relative;
     padding-top: 46px;
     padding-bottom: 0; }
     @media screen and (min-width: 660px) {
-      .app-description__cards {
+      .app-description__cards-inner {
         padding-left: 295px;
-        padding-top: 36px;
         padding-bottom: 42px;
         width: 620px;
         min-height: 489px;
         margin-left: auto;
         margin-right: auto; } }
     @media screen and (min-width: 1200px) {
-      .app-description__cards {
+      .app-description__cards-inner {
         display: flex;
         justify-content: space-between;
         padding-left: 0;
         padding-top: 0;
         padding-bottom: 67px;
-        margin-left: 0;
-        margin-right: 0;
         width: auto;
-        min-height: auto; } }
+        min-height: 100%; } }
   .app-description__card {
     margin-top: 39px; }
     @media screen and (min-width: 660px) {
@@ -755,6 +751,13 @@ body {
   display: none; }
   @media screen and (min-width: 660px) {
     .box-info {
+      display: block;
+      background-color: #ffffff; } }
+  @media screen and (min-width: 1200px) {
+    .box-info {
+      background-color: #f0f0f0; } }
+  @media screen and (min-width: 660px) {
+    .box-info__container {
       display: flex;
       justify-content: space-between;
       padding-top: 58px;
@@ -762,11 +765,41 @@ body {
       margin-left: auto;
       margin-right: auto; } }
   @media screen and (min-width: 1200px) {
-    .box-info {
+    .box-info__container {
       padding-top: 0;
-      width: 100%; }
-      .box-info__img {
-        margin-left: 7px; } }
+      padding-bottom: 58px;
+      width: 100%; } }
+  @media screen and (min-width: 660px) {
+    .box-info__content {
+      font-size: 14px;
+      line-height: 24px;
+      width: 335px;
+      padding-left: 12px;
+      padding-right: 12px; } }
+  @media screen and (min-width: 1200px) {
+    .box-info__content {
+      font-size: 18px;
+      line-height: 30px;
+      padding-left: 70px;
+      padding-right: 20px;
+      width: auto; } }
+  @media screen and (min-width: 660px) {
+    .box-info__title {
+      font-size: 30px;
+      line-height: 36px;
+      font-weight: 700;
+      margin-top: 37px; } }
+  @media screen and (min-width: 1200px) {
+    .box-info__title {
+      line-height: 30px;
+      margin-top: 93px;
+      margin-bottom: 24px; } }
+  @media screen and (min-width: 1200px) {
+    .box-info__text {
+      margin-bottom: 30px; } }
+  .box-info__link {
+    display: inline-block;
+    color: #d22856; }
 
 .app-contacts {
   padding-top: 10px;
