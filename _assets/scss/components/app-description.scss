@@ -77,21 +77,14 @@
   }
 
   &__card {
-
     margin-top: 39px;
 
-
     @media screen and (min-width: $sm) {
-
       margin-top: 42px;
-
     }
 
-
     @media screen and (min-width: $lg) {
-
       margin-top: 0;
-
     }
   }
 }

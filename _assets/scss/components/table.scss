@@ -1,0 +1,50 @@
+.table {
+  display: none;
+
+  @media screen and (min-width: $sm) {
+    width: auto;
+    display: block;
+    border-collapse: collapse;
+  }
+
+
+
+  &__cell {
+    border: 2px solid #e8eaea;
+    padding-top: 17px;
+    padding-bottom: 20px;
+  }
+
+  &__cell--last {
+    border-right: none;
+  }
+
+  &__cell--name {
+
+    @media screen and (min-width: $sm) {
+      border-left: none;
+      border-top: none;
+      border-bottom: none;
+      background-color: #1d2631;
+      color: #ffffff;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 16px;
+    }
+
+    @media screen and (min-width: $lg) {
+      font-size: 18px;
+    }
+  }
+
+  &__rate-price {
+
+    @media screen and (min-width: $sm) {
+      font-size: 18px;
+    }
+
+    @media screen and (min-width: $sm) {
+      font-size: 24px;
+    }
+  }
+}

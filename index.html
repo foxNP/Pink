@@ -109,8 +109,9 @@
             </div>
             </div>
         </div>
-        <div class="app-description__addition box-info">
+        <div class="box-info">
             <div class="container box-info__container">
+                <div class="box-info__inner">
             <div class="box-info__img">
                 <picture>
                 <source srcset="./build/img/time-lg.png" type="image/svg+xml" media="(min-width: 1200px)">
@@ -127,13 +128,14 @@
             </div>
             <a href="#" class="box-info__link">Узнать больше об исследовании</a>
             </div>
+                </div>
         </div>
         </div>
     </section>
     <section class="app-reviews">
         <div class="container">
         <div class="app-reviews__item">
-            <div class="app-reviews__img"><img src="#" alt=""></div>
+            <div class="app-reviews__img"><img src="./build/img/quotes.png" alt=""></div>
             <div class="app-reviews__text">
                 «Это приложение перевернуло мой мир и позволило по-новому взглянуть на
                 привычные серые вещи! А еще я познакомился со своей будущей женой в
@@ -150,35 +152,49 @@
     </section>
     <section class="app-price">
         <div class="container">
-        <table class="app-price__table">
-            <th class="app-price__name"></th>
-            <th class="app-price__base">База 1,99 USD</th>
-            <th class="app-price__standard">Стандарт 3,99 USD</th>
-            <th class="app-price__unlimited">Анлим 9,99 USD</th>
+        <table class="app-price__table table">
             <tr>
-                <td>Розовый фильтр</td>
-                <td>V</td>
-                <td>V</td>
-                <td>V</td>
+            <th></th>
+            <th class="table__cell table__cell--name">
+                <div class="bold">База</div>
+                <div class="light table__rate-price">1,99 USD</div>
+            </th>
+            <th class="table__cell table__cell--name">
+                <div class="bold">Стандарт</div>
+                <div class="light table__rate-price">3,99 USD</div>
+            </th>
+            <th class="table__cell table__cell--name table__cell--last">
+                <div class="bold">Анлим</div>
+                <div class="light table__rate-price">9,99 USD</div>
+            </th>
             </tr>
             <tr>
-                <td>Смайлики</td>
-                <td>X</td>
-                <td>V</td>
-                <td>V</td>
+                <td class="table__cell">Розовый фильтр</td>
+                <td class="table__cell">V</td>
+                <td class="table__cell">V</td>
+                <td class="table__cell">V</td>
             </tr>
             <tr>
-                <td>Комментарии</td>
-                <td>X</td>
-                <td>X</td>
-                <td>V</td>
+                <td class="table__cell">Смайлики</td>
+                <td class="table__cell">X</td>
+                <td class="table__cell">V</td>
+                <td class="table__cell">V</td>
+            </tr>
+            <tr>
+                <td class="table__cell">Комментарии</td>
+                <td class="table__cell">X</td>
+                <td class="table__cell">X</td>
+                <td class="table__cell">V</td>
             </tr>
         </table>
-        <div class="app-price__slider">
-            <div class="">Стандарт 3,99 USD</div>
-            <div class="">Розовый фильтр</div>
-            <div class="">Смайлики</div>
-            <div class="">Комментарии</div>
+        <div class="app-price__slider slider">
+            <div class="slider__rate">
+                <div class="bold">Стандарт</div>
+                <div class="light slider__rate-price">3,99 USD</div>
+            </div>
+            <div class="slider__option">Розовый фильтр</div>
+            <div class="slider__option">Смайлики</div>
+            <div class="slider__option">Комментарии</div>
         </div>
         </div>
     </section>

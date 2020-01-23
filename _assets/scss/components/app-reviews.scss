@@ -1,0 +1,82 @@
+.app-reviews {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 42px;
+  padding-bottom: 88px;
+
+  @media screen and (min-width: $sm) {
+    padding-top: 32px;
+    padding-bottom: 78px;
+  }
+
+  @media screen and (min-width: $lg) {
+    padding-top: 70px;
+    padding-bottom: 41px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img {
+  display: none;
+
+    @media screen and (min-width: $lg) {
+      display: block;
+      margin-bottom: 43px;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    order: 1;
+
+    @media screen and (min-width: $sm) {
+      font-size: 18px;
+      order: 0;
+      margin-bottom: 35px;
+      width: 620px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media screen and (min-width: $lg) {
+      width: 690px;
+      margin-bottom: 38px;
+    }
+
+  }
+
+  &__name-user {
+    font-weight: 700;
+    margin-bottom: 12px;
+
+    @media screen and (min-width: $sm) {
+      font-size: 20px;
+      margin-bottom: 2px;
+    }
+
+    @media screen and (min-width: $lg) {
+      font-size: 24px;
+    }
+  }
+
+  &__info-user {
+    display: none;
+
+    @media screen and (min-width: $sm) {
+      display: block;
+      font-size: 14px;
+    }
+
+    @media screen and (min-width: $lg) {
+      display: block;
+      font-size: 18px;
+    }
+
+  }
+
+}

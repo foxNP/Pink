@@ -351,6 +351,12 @@ body {
   color: #000000;
   text-transform: none; }
 
+.bold {
+  font-weight: 700; }
+
+.light {
+  font-weight: 300; }
+
 .i-burger {
   display: inline-block;
   background-image: url("../img/icons/i_burger.png");
@@ -604,7 +610,7 @@ body {
         margin-bottom: 120px; } }
 
 .app-price {
-  display: none; }
+  padding-top: 90px; }
 
 .app-description {
   padding-top: 40px; }
@@ -757,24 +763,24 @@ body {
     .box-info {
       background-color: #f0f0f0; } }
   @media screen and (min-width: 660px) {
-    .box-info__container {
+    .box-info__inner {
       display: flex;
       justify-content: space-between;
       padding-top: 58px;
+      padding-bottom: 58px;
       width: 620px;
       margin-left: auto;
       margin-right: auto; } }
   @media screen and (min-width: 1200px) {
-    .box-info__container {
+    .box-info__inner {
       padding-top: 0;
-      padding-bottom: 58px;
       width: 100%; } }
   @media screen and (min-width: 660px) {
     .box-info__content {
       font-size: 14px;
       line-height: 24px;
       width: 335px;
-      padding-left: 12px;
+      padding-left: 25px;
       padding-right: 12px; } }
   @media screen and (min-width: 1200px) {
     .box-info__content {
@@ -788,18 +794,145 @@ body {
       font-size: 30px;
       line-height: 36px;
       font-weight: 700;
-      margin-top: 37px; } }
+      margin-top: 37px;
+      padding-right: 105px; } }
   @media screen and (min-width: 1200px) {
     .box-info__title {
       line-height: 30px;
       margin-top: 93px;
-      margin-bottom: 24px; } }
+      margin-bottom: 24px;
+      padding-right: 0; } }
+  @media screen and (min-width: 660px) {
+    .box-info__text {
+      margin-top: 10px;
+      margin-bottom: 10px; } }
   @media screen and (min-width: 1200px) {
     .box-info__text {
-      margin-bottom: 30px; } }
+      margin-bottom: 30px;
+      margin-top: 0; } }
   .box-info__link {
     display: inline-block;
     color: #d22856; }
+
+.app-reviews {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 42px;
+  padding-bottom: 88px; }
+  @media screen and (min-width: 660px) {
+    .app-reviews {
+      padding-top: 32px;
+      padding-bottom: 78px; } }
+  @media screen and (min-width: 1200px) {
+    .app-reviews {
+      padding-top: 70px;
+      padding-bottom: 41px; } }
+  .app-reviews__item {
+    display: flex;
+    flex-direction: column; }
+  .app-reviews__img {
+    display: none; }
+    @media screen and (min-width: 1200px) {
+      .app-reviews__img {
+        display: block;
+        margin-bottom: 43px; } }
+  .app-reviews__text {
+    font-size: 14px;
+    order: 1; }
+    @media screen and (min-width: 660px) {
+      .app-reviews__text {
+        font-size: 18px;
+        order: 0;
+        margin-bottom: 35px;
+        width: 620px;
+        margin-left: auto;
+        margin-right: auto; } }
+    @media screen and (min-width: 1200px) {
+      .app-reviews__text {
+        width: 690px;
+        margin-bottom: 38px; } }
+  .app-reviews__name-user {
+    font-weight: 700;
+    margin-bottom: 12px; }
+    @media screen and (min-width: 660px) {
+      .app-reviews__name-user {
+        font-size: 20px;
+        margin-bottom: 2px; } }
+    @media screen and (min-width: 1200px) {
+      .app-reviews__name-user {
+        font-size: 24px; } }
+  .app-reviews__info-user {
+    display: none; }
+    @media screen and (min-width: 660px) {
+      .app-reviews__info-user {
+        display: block;
+        font-size: 14px; } }
+    @media screen and (min-width: 1200px) {
+      .app-reviews__info-user {
+        display: block;
+        font-size: 18px; } }
+
+.table {
+  display: none; }
+  @media screen and (min-width: 660px) {
+    .table {
+      width: auto;
+      display: block;
+      border-collapse: collapse; } }
+  .table__cell {
+    border: 2px solid #e8eaea;
+    padding-top: 17px;
+    padding-bottom: 20px; }
+  .table__cell--last {
+    border-right: none; }
+  @media screen and (min-width: 660px) {
+    .table__cell--name {
+      border-left: none;
+      border-top: none;
+      border-bottom: none;
+      background-color: #1d2631;
+      color: #ffffff;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 16px; } }
+  @media screen and (min-width: 1200px) {
+    .table__cell--name {
+      font-size: 18px; } }
+  @media screen and (min-width: 660px) {
+    .table__rate-price {
+      font-size: 18px; } }
+  @media screen and (min-width: 660px) {
+    .table__rate-price {
+      font-size: 24px; } }
+
+.slider {
+  text-transform: uppercase;
+  font-size: 14px;
+  border-left: 2px solid #e8eaea;
+  border-right: 2px solid #e8eaea;
+  border-bottom: 2px solid #e8eaea;
+  margin-left: auto;
+  margin-right: auto; }
+  @media screen and (min-width: 660px) {
+    .slider {
+      display: none; } }
+  .slider__rate {
+    background-color: #1d2631;
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 17px;
+    padding-bottom: 20px; }
+  .slider__rate-price {
+    font-size: 24px; }
+  .slider__option {
+    border-top: 2px solid #e8eaea;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 22px;
+    padding-right: 65px; }
 
 .app-contacts {
   padding-top: 10px;

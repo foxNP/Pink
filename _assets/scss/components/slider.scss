@@ -1,0 +1,34 @@
+.slider {
+  text-transform: uppercase;
+  font-size: 14px;
+  border-left: 2px solid #e8eaea;
+  border-right: 2px solid #e8eaea;
+  border-bottom: 2px solid #e8eaea;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $sm) {
+    display: none;
+  }
+
+  &__rate {
+    background-color: #1d2631;
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 17px;
+    padding-bottom: 20px;
+  }
+
+  &__rate-price {
+    font-size: 24px;
+  }
+
+  &__option {
+    border-top: 2px solid #e8eaea;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 22px;
+    padding-right: 65px;
+  }
+}
