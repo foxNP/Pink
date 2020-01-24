@@ -2,17 +2,34 @@
   display: none;
 
   @media screen and (min-width: $sm) {
-    width: auto;
-    display: block;
+    width: 100%;
+    display: table;
     border-collapse: collapse;
+    font-size: 14px;
   }
 
-
+  @media screen and (min-width: $lg) {
+    font-size: 18px;
+  }
 
   &__cell {
-    border: 2px solid #e8eaea;
-    padding-top: 17px;
-    padding-bottom: 20px;
+
+    @media screen and (min-width: $sm) {
+      border: 2px solid #e8eaea;
+      width: 25%;
+      padding-top: 7px;
+      padding-bottom: 8px;
+      padding-left: 14px;
+      padding-right: 14px;
+    }
+
+    @media screen and (min-width: $lg) {
+      padding-top: 14px;
+      padding-bottom: 15px;
+      padding-left: 21px;
+      padding-right: 21px;
+    }
+
   }
 
   &__cell--last {
@@ -40,11 +57,13 @@
   &__rate-price {
 
     @media screen and (min-width: $sm) {
-      font-size: 18px;
+      margin-top: 5px;
+      font-size: 20px;
     }
 
-    @media screen and (min-width: $sm) {
+    @media screen and (min-width: $lg) {
       font-size: 24px;
     }
   }
+
 }
