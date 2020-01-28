@@ -15,7 +15,7 @@
     @media screen and (min-width: $sm) {
       display: flex;
       justify-content: space-between;
-      padding-top: 58px;
+      padding-top: 59px;
       padding-bottom: 58px;
       width: 620px;
       margin-left: auto;
@@ -23,7 +23,7 @@
     }
 
     @media screen and (min-width: $lg) {
-      padding-top: 0;
+      padding-top: 1px;
       width: 100%;
     }
   }
@@ -83,3 +83,4 @@
     color: #d22856;
   }
 }
+

@@ -1,7 +1,7 @@
 .app-description {
   padding-top: 40px;
 
-  @media (min-width: $sm) and (max-width: $lg)  {
+  @media screen and (min-width: $sm)  {
     padding-top: 50px;
   }
 
@@ -49,6 +49,28 @@
 
   &__cards {
     background-color: #f0f0f0;
+    position: relative;
+  }
+
+  &__cards::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -1px;
+    width: 100%;
+    height: 35px;
+    background-image: url("../img/background/background-section.svg");
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: $sm)  {
+      height: 90px;
+    }
+
+    @media screen and (min-width: $lg) {
+      height: 110px;
+    }
   }
 
   &__cards-inner {
@@ -86,5 +108,9 @@
     @media screen and (min-width: $lg) {
       margin-top: 0;
     }
+  }
+
+  &__box-info {
+    margin-top: -1px;
   }
 }

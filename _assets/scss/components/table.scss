@@ -17,10 +17,11 @@
     @media screen and (min-width: $sm) {
       border: 2px solid #e8eaea;
       width: 25%;
-      padding-top: 7px;
-      padding-bottom: 8px;
+      background-color: #ffffff;
       padding-left: 14px;
       padding-right: 14px;
+      text-align: center;
+      vertical-align: center;
     }
 
     @media screen and (min-width: $lg) {
@@ -66,4 +67,8 @@
     }
   }
 
+}
+
+td:first-child {
+  text-align: left;
 }

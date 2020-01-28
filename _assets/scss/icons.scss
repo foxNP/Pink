@@ -66,6 +66,22 @@
   display: inline-block;
   background-image: url("../img/icons/i_microsoft-logo.png");
   background-repeat: no-repeat;
-  height:41px;
+  height: 41px;
   width: 44px;
+}
+
+.i-no {
+  display: inline-block;
+  background-image: url("../img/icons/i_no.png");
+  background-repeat: no-repeat;
+  height: 27px;
+  width: 27px;
+}
+
+.i-yes {
+  display: inline-block;
+  background-image: url("../img/icons/i_yes.png");
+  background-repeat: no-repeat;
+  height:27px;
+  width: 32px;
 }
