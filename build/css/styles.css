@@ -952,16 +952,18 @@ body {
       border: 2px solid #e8eaea;
       width: 25%;
       background-color: #ffffff;
+      padding-top: 7px;
       padding-left: 14px;
       padding-right: 14px;
-      text-align: center;
-      vertical-align: center; } }
+      text-align: center; } }
   @media screen and (min-width: 1200px) {
     .table__cell {
-      padding-top: 14px;
-      padding-bottom: 15px;
+      padding-top: 12px;
+      padding-bottom: 13px;
       padding-left: 21px;
       padding-right: 21px; } }
+  .table__cell:first-child {
+    text-align: left; }
   .table__cell--last {
     border-right: none; }
   @media screen and (min-width: 660px) {
@@ -977,16 +979,36 @@ body {
   @media screen and (min-width: 1200px) {
     .table__cell--name {
       font-size: 18px; } }
+  .table__cell--hit {
+    position: relative; }
+    @media screen and (min-width: 660px) {
+      .table__cell--hit ::before {
+        content: url("../img/hit-sm.png");
+        display: block;
+        width: 61px;
+        height: 61px;
+        position: absolute;
+        top: 0;
+        left: 0; } }
+    @media screen and (min-width: 1200px) {
+      .table__cell--hit ::before {
+        content: url("../img/hit.png");
+        width: 73px;
+        height: 73px; } }
+  @media screen and (min-width: 660px) {
+    .table__rate {
+      margin-top: 6px;
+      font-weight: 700; } }
   @media screen and (min-width: 660px) {
     .table__rate-price {
-      margin-top: 5px;
-      font-size: 20px; } }
+      font-size: 18px;
+      font-weight: 300;
+      margin-bottom: 8px;
+      margin-top: -3px; } }
   @media screen and (min-width: 1200px) {
     .table__rate-price {
-      font-size: 24px; } }
-
-td:first-child {
-  text-align: left; }
+      font-size: 24px;
+      margin-top: 0; } }
 
 .slider {
   text-transform: uppercase;
@@ -1006,6 +1028,16 @@ td:first-child {
     font-size: 18px;
     padding-top: 17px;
     padding-bottom: 20px; }
+  .slider__rate--hit {
+    position: relative; }
+    .slider__rate--hit ::before {
+      content: url("../img/hit.png");
+      display: block;
+      width: 73px;
+      height: 73px;
+      position: absolute;
+      top: 0;
+      left: 0; }
   .slider__rate-price {
     font-size: 24px; }
   .slider__option {
@@ -1014,7 +1046,9 @@ td:first-child {
     padding-top: 14px;
     padding-bottom: 14px;
     padding-left: 22px;
-    padding-right: 65px; }
+    padding-right: 17px;
+    justify-content: space-between;
+    display: flex; }
 
 .app-contacts {
   padding-top: 42px;
@@ -1047,7 +1081,7 @@ td:first-child {
     margin-right: auto;
     margin-bottom: 36px;
     width: 225px; }
-    @media (max-width: 1200px) and (min-width: 660px) {
+    @media screen and (min-width: 660px) {
       .app-contacts__title {
         font-size: 40px;
         line-height: 45px;
@@ -1076,12 +1110,13 @@ td:first-child {
     padding-right: 10px;
     padding-left: 10px;
     margin-bottom: 20px; }
-    @media (max-width: 1200px) and (min-width: 660px) {
+    @media screen and (min-width: 660px) {
       .app-contacts__item {
         width: 50%;
         margin-bottom: 50px; } }
     @media screen and (min-width: 1200px) {
       .app-contacts__item {
+        width: auto;
         margin-bottom: 20px; } }
   .app-contacts__item--address {
     order: 1; }

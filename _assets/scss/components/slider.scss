@@ -20,6 +20,20 @@
     padding-bottom: 20px;
   }
 
+  &__rate--hit {
+    position: relative;
+
+    ::before {
+      content: url("../img/hit.png");
+      display: block;
+      width: 73px;
+      height: 73px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
   &__rate-price {
     font-size: 24px;
   }
@@ -30,6 +44,8 @@
     padding-top: 14px;
     padding-bottom: 14px;
     padding-left: 22px;
-    padding-right: 65px;
+    padding-right: 17px;
+    justify-content: space-between;
+    display: flex;
   }
 }
