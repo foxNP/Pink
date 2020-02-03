@@ -443,14 +443,14 @@ body {
   right: 0;
   left: 0;
   z-index: 2; }
+  @media screen and (min-width: 660px) {
+    .header {
+      height: 110px; } }
   .header__logo {
     padding-bottom: 15px; }
   @media screen and (min-width: 1200px) {
     .header__menu {
       margin-left: 170px; } }
-  @media screen and (min-width: 660px) {
-    .header {
-      height: 110px; } }
   .header__row {
     display: flex;
     justify-content: space-between;
@@ -492,6 +492,54 @@ body {
   .menu__item a {
     text-decoration: none;
     color: #ffffff; }
+
+@media (max-width: 1200px) and (min-width: 660px) {
+  .menu-open__header {
+    position: static;
+    background-color: #283645;
+    height: auto; } }
+
+@media (max-width: 1200px) and (min-width: 660px) {
+  .menu-open__row {
+    flex-wrap: wrap; } }
+
+@media (max-width: 1200px) and (min-width: 660px) {
+  .menu-open__nav {
+    flex-direction: column;
+    width: 100%;
+    height: auto; } }
+
+@media (max-width: 1200px) and (min-width: 660px) {
+  .menu-open__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: -20px;
+    margin-right: -20px; } }
+
+@media (max-width: 1200px) and (min-width: 660px) {
+  .menu-open__item {
+    padding-bottom: 24px;
+    padding-top: 23px;
+    width: 100%;
+    text-align: center; } }
+
+@media (max-width: 1200px) and (min-width: 660px) {
+  .menu-open__control {
+    position: absolute;
+    top: 43px;
+    right: 20px; } }
+
+@media (max-width: 1200px) and (min-width: 660px) {
+  .menu-open__btn--open {
+    display: none; } }
+
+@media (max-width: 1200px) and (min-width: 660px) {
+  .menu-open__btn--close {
+    display: block; } }
 
 .get-app {
   background-color: #19222b;
