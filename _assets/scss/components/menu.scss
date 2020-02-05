@@ -9,6 +9,7 @@
   @media screen and (min-width: $lg) {
     flex-grow: 1;
   }
+
   &__list {
     display: none;
     list-style: none;
@@ -47,4 +48,76 @@
     text-decoration: none;
     color: #ffffff;
   }
+
+  &__item:hover a {
+    color: #d22856;
+  }
+
+  &__item:active a {
+    color: #ffffff;
+    opacity: 0.7;
+  }
 }
+.menu-open .menu {
+  @media screen and (max-width: $lg) {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.menu-open .menu__list {
+  @media screen and (max-width: $lg) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.menu-open .menu__item {
+  @media screen and (max-width: $lg) {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-top: 1px solid #54575a;
+  }
+}
+
+.menu-open .menu__item a {
+  @media screen and (max-width: $lg) {
+    display: block;
+    padding-bottom: 23px;
+    padding-top: 22px;
+  }
+}
+
+.menu-open .menu__control {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 21px;
+
+  @media (max-width: $lg) and (min-width: $sm) {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+}
+
+.menu-open .menu__btn--open {
+  @media screen and (max-width: $lg) {
+    display: none;
+  }
+}
+
+.menu-open .menu__btn--close {
+  @media screen and (max-width: $lg) {
+    display: block;
+  }
+}
+

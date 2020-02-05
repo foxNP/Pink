@@ -15,6 +15,15 @@
     text-decoration: none;
   }
 
+  &__item--mail:hover a {
+    color: #000000;
+  }
+
+  &__item--mail:active a {
+    color: #000000;
+    opacity: 0.7;
+  }
+
   &__address {
     font-style: normal;
   }

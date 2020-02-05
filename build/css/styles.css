@@ -446,8 +446,9 @@ body {
   @media screen and (min-width: 660px) {
     .header {
       height: 110px; } }
-  .header__logo {
-    padding-bottom: 15px; }
+  @media screen and (min-width: 660px) {
+    .header__logo {
+      padding-bottom: 15px; } }
   @media screen and (min-width: 1200px) {
     .header__menu {
       margin-left: 170px; } }
@@ -456,6 +457,31 @@ body {
     justify-content: space-between;
     height: 100%;
     align-items: center; }
+
+@media screen and (max-width: 1200px) {
+  .menu-open .header {
+    position: static;
+    background-color: #283645;
+    height: auto; } }
+
+@media screen and (max-width: 1200px) {
+  .menu-open .header__row {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding-right: 0;
+    padding-left: 0; } }
+
+.menu-open .header__logo {
+  padding-left: 20px;
+  width: 100%;
+  border-bottom: 1px solid black;
+  padding-top: 20px;
+  padding-bottom: 22px; }
+  @media (max-width: 1200px) and (min-width: 660px) {
+    .menu-open .header__logo {
+      padding-top: 27px;
+      padding-bottom: 41px; } }
 
 .menu {
   display: flex; }
@@ -492,53 +518,59 @@ body {
   .menu__item a {
     text-decoration: none;
     color: #ffffff; }
+  .menu__item:hover a {
+    color: #d22856; }
+  .menu__item:active a {
+    color: #ffffff;
+    opacity: 0.7; }
 
-@media (max-width: 1200px) and (min-width: 660px) {
-  .menu-open__header {
-    position: static;
-    background-color: #283645;
-    height: auto; } }
-
-@media (max-width: 1200px) and (min-width: 660px) {
-  .menu-open__row {
-    flex-wrap: wrap; } }
-
-@media (max-width: 1200px) and (min-width: 660px) {
-  .menu-open__nav {
+@media screen and (max-width: 1200px) {
+  .menu-open .menu {
     flex-direction: column;
     width: 100%;
     height: auto; } }
 
-@media (max-width: 1200px) and (min-width: 660px) {
-  .menu-open__list {
+@media screen and (max-width: 1200px) {
+  .menu-open .menu__list {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-transform: uppercase;
     margin-top: 0;
-    margin-bottom: 0;
-    margin-left: -20px;
-    margin-right: -20px; } }
+    margin-bottom: 0; } }
 
-@media (max-width: 1200px) and (min-width: 660px) {
-  .menu-open__item {
-    padding-bottom: 24px;
-    padding-top: 23px;
+@media screen and (max-width: 1200px) {
+  .menu-open .menu__item {
     width: 100%;
-    text-align: center; } }
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-top: 1px solid #54575a; } }
 
-@media (max-width: 1200px) and (min-width: 660px) {
-  .menu-open__control {
-    position: absolute;
-    top: 43px;
-    right: 20px; } }
+@media screen and (max-width: 1200px) {
+  .menu-open .menu__item a {
+    display: block;
+    padding-bottom: 23px;
+    padding-top: 22px; } }
 
-@media (max-width: 1200px) and (min-width: 660px) {
-  .menu-open__btn--open {
+.menu-open .menu__control {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 21px; }
+  @media (max-width: 1200px) and (min-width: 660px) {
+    .menu-open .menu__control {
+      padding-top: 45px;
+      padding-bottom: 45px; } }
+
+@media screen and (max-width: 1200px) {
+  .menu-open .menu__btn--open {
     display: none; } }
 
-@media (max-width: 1200px) and (min-width: 660px) {
-  .menu-open__btn--close {
+@media screen and (max-width: 1200px) {
+  .menu-open .menu__btn--close {
     display: block; } }
 
 .get-app {
@@ -635,6 +667,12 @@ body {
         font-size: 21px;
         margin-bottom: 67px;
         margin-top: 0; } }
+  .get-app__btn:hover {
+    color: #d22856;
+    background-color: #ffffff; }
+  .get-app__btn:active {
+    color: rgba(240, 10, 86, 0.7);
+    background-color: #ffffff; }
   .get-app__icons {
     list-style: none;
     padding-left: 0;
@@ -1111,6 +1149,11 @@ body {
   .app-contacts__link {
     color: #d22856;
     text-decoration: none; }
+  .app-contacts__item--mail:hover a {
+    color: #000000; }
+  .app-contacts__item--mail:active a {
+    color: #000000;
+    opacity: 0.7; }
   .app-contacts__address {
     font-style: normal; }
   .app-contacts__heading {
@@ -1247,10 +1290,15 @@ body {
     margin-right: 6px;
     margin-left: 6px;
     border-radius: 50%;
-    border: 4px solid #e9ebec;
+    border: 3px solid #e9ebec;
     display: flex;
     align-items: center;
     justify-content: center; }
+  .social__item:hover {
+    border: 3px solid #000000; }
+  .social__item:active {
+    opacity: 0.7;
+    border: 3px solid #e9ebec; }
 
 .copyright {
   line-height: 18px;

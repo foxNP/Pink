@@ -117,6 +117,16 @@
     }
   }
 
+  &__btn:hover {
+    color: #d22856;
+    background-color: #ffffff;
+  }
+
+  &__btn:active {
+    color: rgba(240, 10, 86, 0.7);
+    background-color: #ffffff;
+  }
+
   &__icons {
     list-style: none;
     padding-left: 0;

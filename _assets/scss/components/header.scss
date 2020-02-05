@@ -13,7 +13,10 @@
   }
 
   &__logo {
-    padding-bottom: 15px;
+
+    @media screen and (min-width: $sm) {
+      padding-bottom: 15px;
+    }
   }
 
   &__menu {
@@ -30,5 +33,33 @@
   }
 }
 
+.menu-open .header {
+  @media screen and (max-width: $lg) {
+    position: static;
+    background-color: rgba(40, 54, 69, 10);
+    height: auto;
+  }
+}
 
+.menu-open .header__row {
+  @media screen and (max-width: $lg) {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
 
+.menu-open .header__logo {
+    padding-left: 20px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding-top: 20px;
+    padding-bottom: 22px;
+
+  @media (max-width: $lg) and (min-width: $sm) {
+    padding-top: 27px;
+    padding-bottom: 41px;
+  }
+}
