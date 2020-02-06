@@ -59,7 +59,7 @@
   }
 }
 .menu-open .menu {
-  @media screen and (max-width: $lg) {
+  @media screen and (max-width: 1199px) {
     flex-direction: column;
     width: 100%;
     height: auto;
@@ -67,7 +67,7 @@
 }
 
 .menu-open .menu__list {
-  @media screen and (max-width: $lg) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,7 +78,7 @@
 }
 
 .menu-open .menu__item {
-  @media screen and (max-width: $lg) {
+  @media screen and (max-width: 1199px) {
     width: 100%;
     text-align: center;
     border-bottom: 1px solid black;
@@ -87,7 +87,7 @@
 }
 
 .menu-open .menu__item a {
-  @media screen and (max-width: $lg) {
+  @media screen and (max-width: 1199px) {
     display: block;
     padding-bottom: 23px;
     padding-top: 22px;
@@ -103,20 +103,20 @@
   padding-top: 20px;
   padding-bottom: 21px;
 
-  @media (max-width: $lg) and (min-width: $sm) {
+  @media (max-width: 1199px) and (min-width: $sm) {
     padding-top: 45px;
     padding-bottom: 45px;
   }
 }
 
 .menu-open .menu__btn--open {
-  @media screen and (max-width: $lg) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 }
 
 .menu-open .menu__btn--close {
-  @media screen and (max-width: $lg) {
+  @media screen and (max-width: 1199px) {
     display: block;
   }
 }

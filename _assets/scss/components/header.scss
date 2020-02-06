@@ -34,7 +34,7 @@
 }
 
 .menu-open .header {
-  @media screen and (max-width: $lg) {
+  @media screen and (max-width: 1199px) {
     position: static;
     background-color: rgba(40, 54, 69, 10);
     height: auto;
@@ -42,13 +42,14 @@
 }
 
 .menu-open .header__row {
-  @media screen and (max-width: $lg) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     position: relative;
     padding-right: 0;
     padding-left: 0;
   }
+
 }
 
 .menu-open .header__logo {
@@ -58,7 +59,7 @@
     padding-top: 20px;
     padding-bottom: 22px;
 
-  @media (max-width: $lg) and (min-width: $sm) {
+  @media (max-width: 1199px) and (min-width: $sm) {
     padding-top: 27px;
     padding-bottom: 41px;
   }
