@@ -63,4 +63,8 @@
     padding-top: 27px;
     padding-bottom: 41px;
   }
+
+  @media screen and (min-width: $lg) {
+    width: auto;
+  }
 }

@@ -2,12 +2,45 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Pink Photo</title>
+    <title>Pink Photo 322</title>
     <link href="css/styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
 <header class="header">
-
+    <div class="container header__row">
+        <div class="header__logo">
+            <picture>
+                <source srcset="./img/logo-xl.png" type="image/svg+xml" media="(min-width: 1200px)">
+                <source srcset="./img/logo-sm.png" type="image/svg+xml" media="(min-width: 660px)">
+                <img src="./img/logo-xs.png" alt="logo">
+            </picture>
+        </div>
+        <nav class="header__menu menu">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="#">Главная</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#">Фотографии</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#">Конкурс</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#">HTML Academy</a>
+                </li>
+            </ul>
+            <div class="menu__control">
+                <button type="button" class="menu__btn menu__btn--open">
+                    <span class="i-burger"></span>
+                </button>
+                <button type="button" class="menu__btn menu__btn--close">
+                    <span class="i-close"></span>
+                </button>
+            </div>
+        </nav>
+    </div>
 </header>
 
 </body>

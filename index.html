@@ -277,20 +277,5 @@
     </div>
 </footer>
 <script src="./build/js/script.js" type="text/javascript"></script>
-<script>
-    let menu_open = document.querySelector(".menu__btn--open");
-    let menu_inner = document.querySelector(".body");
-    let menu_close = document.querySelector(".menu__btn--close");
-
-    menu_open.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        menu_inner.classList.add("menu-open");
-    });
-
-    menu_close.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        menu_inner.classList.remove("menu-open");
-    });
-</script>
 </body>
 </html>
