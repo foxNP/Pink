@@ -4,129 +4,74 @@
 <body>
 [snp tpl="template/header.html" ]
 <main class="main">
-<section class="promo">
-    <h1 class="promo__title">
-        Фотографии <br/> пользователей
-    </h1>
-    <p class="promo__content">
-        Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
-    </p>
-</section>
-    <section class="photo">
-        <div class="big-card-review">
-            <div class="big-card-review__img">
-                <picture>
-                    <source srcset="./img/photo-1-lg.png" type="image/svg+xml" media="(min-width: 1200px)">
-                    <source srcset="./img/photo-1-sm.png" type="image/svg+xml" media="(min-width: 660px)">
-                    <img src="./img/photo-1-xs.png" alt="cable bridge">
-                </picture>
-            </div>
+    <section class="page-heading">
+        <h1 class="page-heading__title">
+            Фотографии <br/> пользователей
+        </h1>
+        <p class="page-text">
+            Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+        </p>
+    </section>
+    <section class="main-photo">
+        <div class="main-photo__img" style="background-image: url('./img/photo-1-lg.png')">
             <div class="container">
-            <span class="big-card-review__name">Анна (5 минут назад)</span>
-            <span class="big-card-review__like">Нравится: 215</span>
-            <p class="big-card-review__text">
-                Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
-            </p>
+                <span class="main-photo__informer">Панорама дня</span>
             </div>
         </div>
+        <div class="container photo-card photo-card--big">
+            <span class="photo-card__name">Анна (5 минут назад)</span>
+            <span class="photo-card__like">Нравится: 215</span>
+            <p class="photo-card__text">
+                Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе,
+                задавайте свои вопросы!
+            </p>
+        </div>
+    </section>
+    <section>
         <div class="container">
-            <div class="photo__card card-review">
-                <span class="card-review__name">Левон (5 часов назад)</span>
-                <span class="card-review__like">Нравится: 356</span>
-                <div class="card-review__img">
-                    <picture>
-                        <source srcset="./img/photo-2-lg.png" type="image/svg+xml" media="(min-width: 1200px)">
-                        <source srcset="./img/photo-2-sm.png" type="image/svg+xml" media="(min-width: 660px)">
-                        <img src="./img/photo-2-xs.png" alt="telescope">
-                    </picture>
-                </div>
-                <p class="card-review__text">
-                    Вчера он на луну летал, сегодня в руки к нам попал.
-                </p>
-            </div>
-            <div class="photo__card card-review">
-                <span class="card-review__name">Антон (12 часов назад)</span>
-                <span class="card-review__like">Нравится: 666</span>
-                <div class="card-review__img">
+            <ul class="photo-list">
+                <li class="photo-list__item">
+                    <div class="photo-card">
+                        <span class="photo-card__name">Левон<span >(5 часов назад)</span></span>
+                        <span class="photo-card__like">Нравится: 356</span>
+                        <div class="photo-card__img">
+                            <img src="./img/photo-2-lg.png" alt="telescope">
+                        </div>
+                        <p class="photo-card__text">
+                            Вчера он на луну летал, сегодня в руки к нам попал.
+                        </p>
+                    </div>
+                </li>
+
+            </ul>
+            <div class="photo__cards photo-card">
+                <span class="photo-card__name">Антон (12 часов назад)</span>
+                <span class="photo-card__like">Нравится: 666</span>
+                <div class="photo-card__img">
                     <picture>
                         <source srcset="./img/photo-3-lg.png" type="image/svg+xml" media="(min-width: 1200px)">
                         <source srcset="./img/photo-3-sm.png" type="image/svg+xml" media="(min-width: 660px)">
                         <img src="./img/photo-3-xs.png" alt="drums">
                     </picture>
                 </div>
-                <p class="card-review__text">
+                <p class="photo-card__text">
                     Соседи будут рады!
                 </p>
             </div>
-            <div class="photo__card card-review">
-                <span class="card-review__name"></span>
-                <span class="card-review__like"></span>
-                <div class="card-review__img">
-                    <picture>
-                        <source srcset="./img/photo-4-lg.png" type="image/svg+xml" media="(min-width: 1200px)">
-                        <source srcset="./img/photo-4-sm.png" type="image/svg+xml" media="(min-width: 660px)">
-                        <img src="./img/photo-4-xs.png" alt="high-rise">
-                    </picture>
-                </div>
-                <p class="card-review__text">
-
-                </p>
-            </div>
-            <div class="photo__card card-review">
-                <span class="card-review__name"></span>
-                <span class="card-review__like"></span>
-                <div class="card-review__img">
-                    <picture>
-                        <source srcset="./img/photo-5-lg.png" type="image/svg+xml" media="(min-width: 1200px)">
-                        <source srcset="./img/photo-5-sm.png" type="image/svg+xml" media="(min-width: 660px)">
-                        <img src="./img/photo-5-xs.png" alt="watermelons">
-                    </picture>
-                </div>
-                <p class="card-review__text">
-
-                </p>
-            </div>
-            <div class="photo__card card-review">
-                <span class="card-review__name"></span>
-                <span class="card-review__like"></span>
-                <div class="card-review__img">
-                    <picture>
-                        <source srcset="./img/photo-6-lg.png" type="image/svg+xml" media="(min-width: 1200px)">
-                        <source srcset="./img/photo-6-sm.png" type="image/svg+xml" media="(min-width: 660px)">
-                        <img src="./img/photo-6-xs.png" alt="the mountains">
-                    </picture>
-                </div>
-                <p class="card-review__text">
-
-                </p>
-            </div>
-            <div class="photo__card card-review">
-                <span class="card-review__name"></span>
-                <span class="card-review__like"></span>
-                <div class="card-review__img">
-                    <picture>
-                        <source srcset="./img/photo-7-lg.png" type="image/svg+xml" media="(min-width: 1200px)">
-                        <source srcset="./img/photo-7-sm.png" type="image/svg+xml" media="(min-width: 660px)">
-                        <img src="./img/photo-7-xs.png" alt="airplane">
-                    </picture>
-                </div>
-                <p class="card-review__text">
-
-                </p>
-            </div>
+            
         </div>
     </section>
     <section class="">
         <div class="container">
-        <div class="">
-            Затмите их всех! <br/>
-            Выкладывайте все, что накопилось в телефоне!
-        </div>
             <div class="">
-            <picture>
-                <source srcset="./img/photo-8-sm.png" type="image/svg+xml" media="(min-width: 660px)">
-                <img src="./img/photo-8-xs.png" alt="airplane">
-            </picture>
+                Затмите их всех! <br/>
+                Выкладывайте все, что накопилось в телефоне!
+            </div>
+            <div class="">
+                <picture>
+                    <source srcset="./img/photo-8-sm.png" type="image/svg+xml" media="(min-width: 660px)">
+                    <img src="./img/photo-8-xs.png" alt="airplane">
+                </picture>
             </div>
             <div class="">
                 <ul class="">
