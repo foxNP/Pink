@@ -5,9 +5,11 @@
 [snp tpl="template/header.html" ]
 <main class="main">
     <section class="page-heading">
-        <h1 class="page-heading__title">
+        <div class="page-heading__title">
+        <h1>
             Фотографии <br/> пользователей
         </h1>
+        </div>
         <p class="page-text">
             Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
         </p>
@@ -32,56 +34,126 @@
             <ul class="photo-list">
                 <li class="photo-list__item">
                     <div class="photo-card">
-                        <span class="photo-card__name">Левон<span >(5 часов назад)</span></span>
-                        <span class="photo-card__like">Нравится: 356</span>
                         <div class="photo-card__img">
                             <img src="./img/photo-2-lg.png" alt="telescope">
                         </div>
+                        <span class="photo-card__name">Левон<span >(5 часов назад)</span></span>
                         <p class="photo-card__text">
                             Вчера он на луну летал, сегодня в руки к нам попал.
                         </p>
+                        <div class="photo-card__like">
+                            <span>Нравится: 356</span>
+                            <button type="button" class=""><span class="i-heart"></span></button>
+                        </div>
                     </div>
                 </li>
-
+                <li class="photo-list__item">
+                    <div class="photo-card">
+                        <div class="photo-card__img">
+                            <img src="./img/photo-3-lg.png" alt="drum kit">
+                        </div>
+                        <span class="photo-card__name">Антон<span >(12 часов назад)</span></span>
+                        <p class="photo-card__text">
+                            Соседи будут рады!
+                        </p>
+                        <div class="photo-card__like">
+                             <span>Нравится: 666</span>
+                            <button type="button" class=""><span class="i-heart"></span></button>
+                        </div>
+                    </div>
+                </li>
+                <li class="photo-list__item">
+                    <div class="photo-card__img">
+                        <img src="./img/photo-4-lg.png" alt="high-rise">
+                    </div>
+                    <div class="photo-card">
+                        <span class="photo-card__name">Борис<span >(20 часов назад)</span></span>
+                        <p class="photo-card__text">
+                            Здесь могла быть ваша цитата о высоком и вечном.
+                        </p>
+                        <div class="photo-card__like">
+                            <span>Нравится: 215</span>
+                            <button type="button" class=""><span class="i-heart"></span></button>
+                        </div>
+                    </div>
+                </li>
+                <li class="photo-list__item">
+                    <div class="photo-card">
+                        <div class="photo-card__img">
+                            <img src="./img/photo-5-lg.png" alt="watermelon fair">
+                        </div>
+                        <span class="photo-card__name">Сергей<span >(25 часов назад)</span></span>
+                        <p class="photo-card__text">
+                            Самая кубанская в мире!
+                        </p>
+                        <div class="photo-card__like">
+                            <span>Нравится: 4</span>
+                            <button type="button" class=""><span class="i-heart"></span></button>
+                        </div>
+                    </div>
+                </li>
+                <li class="photo-list__item">
+                    <div class="photo-card">
+                        <div class="photo-card__img">
+                            <img src="./img/photo-6-lg.png" alt="the mountains">
+                        </div>
+                        <span class="photo-card__name">Максим<span >(40 часов назад)</span></span>
+                        <p class="photo-card__text">
+                            Где снег-то?
+                        </p>
+                        <div class="photo-card__like">
+                            <span>Нравится: 150</span>
+                            <button type="button" class=""><span class="i-heart"></span></button>
+                        </div>
+                    </div>
+                </li>
+                <li class="photo-list__item">
+                    <div class="photo-card">
+                        <div class="photo-card__img">
+                            <img src="./img/photo-7-lg.png" alt="airplane">
+                        </div>
+                        <span class="photo-card__name">Надежда<span >(45 часов назад)</span></span>
+                        <p class="photo-card__text">
+                            Всем GM и взаимные лайки!
+                        </p>
+                        <div class="photo-card__like">
+                            <span>Нравится: 2560</span>
+                            <button type="button" class=""><span class="i-heart"></span></button>
+                        </div>
+                    </div>
+                </li>
             </ul>
-            <div class="photo__cards photo-card">
-                <span class="photo-card__name">Антон (12 часов назад)</span>
-                <span class="photo-card__like">Нравится: 666</span>
-                <div class="photo-card__img">
-                    <picture>
-                        <source srcset="./img/photo-3-lg.png" type="image/svg+xml" media="(min-width: 1200px)">
-                        <source srcset="./img/photo-3-sm.png" type="image/svg+xml" media="(min-width: 660px)">
-                        <img src="./img/photo-3-xs.png" alt="drums">
-                    </picture>
-                </div>
-                <p class="photo-card__text">
-                    Соседи будут рады!
-                </p>
-            </div>
-            
         </div>
     </section>
-    <section class="">
+    <section>
         <div class="container">
-            <div class="">
+            <p class="page-text">
                 Затмите их всех! <br/>
                 Выкладывайте все, что накопилось в телефоне!
-            </div>
-            <div class="">
-                <picture>
-                    <source srcset="./img/photo-8-sm.png" type="image/svg+xml" media="(min-width: 660px)">
-                    <img src="./img/photo-8-xs.png" alt="airplane">
-                </picture>
-            </div>
-            <div class="">
-                <ul class="">
-                    <li class=""></li>
-                    <li class=""></li>
-                    <li class=""></li>
-                </ul>
+            </p>
+            <div class="graphics-editor">
+                <div class="graphics-editor__img" style="background-image: url('./img/photo-8-sm.png')">
+            <div class="graphics-editor__filters">
+          <div class="graphics-editor__item">
+              <span class="i-frame"></span>
+              <span class=""></span>
+          </div>
+          <div class="graphics-editor__item">
+              <span class="i-fill"></span>
+              <span class=""></span>
+          </div>
+          <div class="graphics-editor__item">
+              <span class="i-brightness"></span>
+              <span class=""></span>
+          </div>
+                <div class="graphics-editor__control">
+                    <button type="button" class="btn graphics-editor__btn-post"></button>
+                    <button type="button" class="btn graphics-editor__btn-cancel"></button>
+                </div>
             </div>
         </div>
-
+        </div>
+        </div>
     </section>
 
 </main>

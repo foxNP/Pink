@@ -440,6 +440,34 @@ body {
   height: 27px;
   width: 32px; }
 
+.i-brightness {
+  display: inline-block;
+  background-image: url("../img/icons/i_brightness.png");
+  background-repeat: no-repeat;
+  height: 32px;
+  width: 32px; }
+
+.i-fill {
+  display: inline-block;
+  background-image: url("../img/icons/i_fill.png");
+  background-repeat: no-repeat;
+  height: 43px;
+  width: 48px; }
+
+.i-frame {
+  display: inline-block;
+  background-image: url("../img/icons/i_frame.png");
+  background-repeat: no-repeat;
+  height: 44px;
+  width: 44px; }
+
+.i-heart {
+  display: inline-block;
+  background-image: url("../img/icons/i_heart.png");
+  background-repeat: no-repeat;
+  height: 12px;
+  width: 14px; }
+
 .header {
   background-color: rgba(0, 0, 0, 0.302);
   height: 66px;
@@ -717,6 +745,21 @@ body {
     @media screen and (min-width: 1200px) {
       .get-app__text {
         margin-bottom: 120px; } }
+
+.page-heading__title {
+  background: url(../img/heading-image-xs.png) center top no-repeat;
+  background-size: 100% auto;
+  min-height: 237px; }
+  @media screen and (min-width: 660px) {
+    .page-heading__title {
+      background: url(../img/heading-image-ms.png) center top no-repeat;
+      background-size: 100% auto;
+      min-height: 442px; } }
+  @media screen and (min-width: 1200px) {
+    .page-heading__title {
+      background: url(../img/heading-image-lg.png) center top no-repeat;
+      background-size: 100% auto;
+      min-height: 397px; } }
 
 .app-price {
   background-color: #f0f0f0;

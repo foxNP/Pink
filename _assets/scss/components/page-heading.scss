@@ -1,0 +1,20 @@
+.page-heading {
+
+  &__title {
+    background: url(../img/heading-image-xs.png) center top no-repeat;
+    background-size: 100% auto;
+    min-height: 237px;
+
+    @media screen and (min-width: $sm) {
+      background: url(../img/heading-image-ms.png) center top no-repeat;
+      background-size: 100% auto;
+      min-height: 442px;
+    }
+
+    @media screen and (min-width: $lg) {
+      background: url(../img/heading-image-lg.png) center top no-repeat;
+      background-size: 100% auto;
+      min-height: 397px;
+    }
+  }
+}
