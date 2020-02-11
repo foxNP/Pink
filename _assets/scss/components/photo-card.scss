@@ -1,0 +1,13 @@
+.photo-card {
+
+  &__content {
+    background-color: #f0f0f0;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    @media screen and (min-width: $sm) {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+  }
+}

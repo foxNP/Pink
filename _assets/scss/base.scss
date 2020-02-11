@@ -28,6 +28,28 @@ body {
   flex-grow: 1;
 }
 
+.page-text {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  width: 250px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  @media screen and (min-width: $sm) {
+    font-size: 18px;
+    width: 450px;
+    margin-bottom: 75px;
+  }
+
+  @media screen and (min-width: $lg) {
+    width: 570px;
+    margin-bottom: 85px;
+  }
+}
+
 .bold {
   font-weight: 700;
 }

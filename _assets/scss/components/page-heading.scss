@@ -4,11 +4,16 @@
     background: url(../img/heading-image-xs.png) center top no-repeat;
     background-size: 100% auto;
     min-height: 237px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
 
     @media screen and (min-width: $sm) {
       background: url(../img/heading-image-ms.png) center top no-repeat;
       background-size: 100% auto;
       min-height: 442px;
+      margin-bottom: 90px;
     }
 
     @media screen and (min-width: $lg) {
@@ -17,4 +22,17 @@
       min-height: 397px;
     }
   }
+}
+
+.page-heading h1 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+
+  @media screen and (min-width: $sm) {
+    font-size: 50px;
+    line-height: 56px;
+  }
+
 }

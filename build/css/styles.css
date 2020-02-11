@@ -357,6 +357,25 @@ body {
 .main {
   flex-grow: 1; }
 
+.page-text {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  width: 250px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 50px; }
+  @media screen and (min-width: 660px) {
+    .page-text {
+      font-size: 18px;
+      width: 450px;
+      margin-bottom: 75px; } }
+  @media screen and (min-width: 1200px) {
+    .page-text {
+      width: 570px;
+      margin-bottom: 85px; } }
+
 .bold {
   font-weight: 700; }
 
@@ -749,17 +768,32 @@ body {
 .page-heading__title {
   background: url(../img/heading-image-xs.png) center top no-repeat;
   background-size: 100% auto;
-  min-height: 237px; }
+  min-height: 237px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px; }
   @media screen and (min-width: 660px) {
     .page-heading__title {
       background: url(../img/heading-image-ms.png) center top no-repeat;
       background-size: 100% auto;
-      min-height: 442px; } }
+      min-height: 442px;
+      margin-bottom: 90px; } }
   @media screen and (min-width: 1200px) {
     .page-heading__title {
       background: url(../img/heading-image-lg.png) center top no-repeat;
       background-size: 100% auto;
       min-height: 397px; } }
+
+.page-heading h1 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center; }
+  @media screen and (min-width: 660px) {
+    .page-heading h1 {
+      font-size: 50px;
+      line-height: 56px; } }
 
 .app-price {
   background-color: #f0f0f0;
@@ -1365,3 +1399,21 @@ body {
         font-size: 18px; } }
   .copyright__img {
     margin-top: 6px; }
+
+.main-photo__img {
+  height: 137px;
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat; }
+  @media screen and (min-width: 660px) {
+    .main-photo__img {
+      height: 505px; } }
+
+.photo-card__content {
+  background-color: #f0f0f0;
+  padding-right: 20px;
+  padding-left: 20px; }
+  @media screen and (min-width: 660px) {
+    .photo-card__content {
+      padding-right: 30px;
+      padding-left: 30px; } }
