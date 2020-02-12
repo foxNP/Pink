@@ -1,13 +1,52 @@
 .photo-card {
+  font-size: 14px;
+  line-height: 24px;
+
+  @media screen and (min-width: $sm) {
+   width: 300px;
+  }
+
+  &__img {
+    height: 180px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: $sm) {
+      height: 300px;
+    }
+
+    @media screen and (min-width: $lg) {
+      height: 400px;
+    }
+  }
 
   &__content {
+    display: flex;
+    flex-direction: column;
     background-color: #f0f0f0;
     padding-right: 20px;
     padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
     @media screen and (min-width: $sm) {
       padding-right: 30px;
       padding-left: 30px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      height: 155px;
     }
+
+    @media screen and (min-width: $lg) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+
+  &__like {
+    text-transform: uppercase;
+    color: #d22856;
+    font-size: 12px;
   }
 }

@@ -16,14 +16,17 @@
     </section>
     <section class="main-photo">
         <div class="main-photo__img" style="background-image: url('./img/photo-1-lg.png')">
-            <div class="container">
+            <div class="container main-photo__container">
                 <span class="main-photo__informer">Панорама дня</span>
             </div>
         </div>
         <div class="container">
             <div class="photo-card photo-card__content photo-card--big">
                 <span class="photo-card__name">Анна (5 минут назад)</span>
-                <span class="photo-card__like">Нравится: 215</span>
+                <div class="photo-card__like photo-card__like--big">
+                    <span>Нравится: 215</span>
+                    <button type="button" class=""><span class="i-heart"></span></button>
+                </div>
                 <p class="photo-card__text">
                     Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе,
                     задавайте свои вопросы!
@@ -37,9 +40,7 @@
             <ul class="photo-list">
                 <li class="photo-list__item">
                     <div class="photo-card">
-                        <div class="photo-card__img">
-                            <img src="./img/photo-2-lg.png" alt="telescope">
-                        </div>
+                        <div class="photo-card__img" style="background-image: url('./img/photo-2-lg.png')"></div>
                         <div class="photo-card__content">
                             <span class="photo-card__name">Левон<span>(5 часов назад)</span></span>
                             <p class="photo-card__text">
@@ -54,9 +55,7 @@
                 </li>
                 <li class="photo-list__item">
                     <div class="photo-card">
-                        <div class="photo-card__img">
-                            <img src="./img/photo-3-lg.png" alt="drum kit">
-                        </div>
+                        <div class="photo-card__img" style="background-image: url('./img/photo-3-lg.png')"></div>
                         <div class="photo-card__content">
                             <span class="photo-card__name">Антон<span>(12 часов назад)</span></span>
                             <p class="photo-card__text">
@@ -70,11 +69,9 @@
                     </div>
                 </li>
                 <li class="photo-list__item">
-                    <div class="photo-card__img">
-                        <img src="./img/photo-4-lg.png" alt="high-rise">
-                    </div>
-                    <div class="photo-card__content">
-                        <div class="photo-card">
+                    <div class="photo-card">
+                        <div class="photo-card__img" style="background-image: url('./img/photo-4-lg.png')"></div>
+                        <div class="photo-card__content">
                             <span class="photo-card__name">Борис<span>(20 часов назад)</span></span>
                             <p class="photo-card__text">
                                 Здесь могла быть ваша цитата о высоком и вечном.
@@ -88,9 +85,7 @@
                 </li>
                 <li class="photo-list__item">
                     <div class="photo-card">
-                        <div class="photo-card__img">
-                            <img src="./img/photo-5-lg.png" alt="watermelon fair">
-                        </div>
+                        <div class="photo-card__img" style="background-image: url('./img/photo-5-lg.png')"></div>
                         <div class="photo-card__content">
                             <span class="photo-card__name">Сергей<span>(25 часов назад)</span></span>
                             <p class="photo-card__text">
@@ -105,9 +100,7 @@
                 </li>
                 <li class="photo-list__item">
                     <div class="photo-card">
-                        <div class="photo-card__img">
-                            <img src="./img/photo-6-lg.png" alt="the mountains">
-                        </div>
+                        <div class="photo-card__img" style="background-image: url('./img/photo-6-lg.png')"></div>
                         <div class="photo-card__content">
                             <span class="photo-card__name">Максим<span>(40 часов назад)</span></span>
                             <p class="photo-card__text">
@@ -122,9 +115,7 @@
                 </li>
                 <li class="photo-list__item">
                     <div class="photo-card">
-                        <div class="photo-card__img">
-                            <img src="./img/photo-7-lg.png" alt="airplane">
-                        </div>
+                        <div class="photo-card__img" style="background-image: url('./img/photo-7-lg.png')"></div>
                         <div class="photo-card__content">
                             <span class="photo-card__name">Надежда<span>(45 часов назад)</span></span>
                             <p class="photo-card__text">
@@ -137,6 +128,22 @@
                         </div>
                     </div>
                 </li>
+                <li class="photo-list__item">
+                    <div class="photo-card">
+                        <div class="photo-card__img" style="background-image: url('./img/photo-7-lg.png')"></div>
+                        <div class="photo-card__content">
+                            <span class="photo-card__name">Надежда<span>(45 часов назад)</span></span>
+                            <p class="photo-card__text">
+                                Всем GM и взаимные лайки!
+                            </p>
+                            <div class="photo-card__like">
+                                <span>Нравится: 2560</span>
+                                <button type="button" class=""><span class="i-heart"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
             </ul>
         </div>
     </section>
