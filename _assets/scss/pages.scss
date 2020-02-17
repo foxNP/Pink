@@ -1,0 +1,14 @@
+.photo-page {
+
+  &__section-list {
+    margin-bottom: 22px;
+
+    @media screen and (min-width: $sm) {
+      margin-bottom: 47px;
+    }
+
+    @media screen and (min-width: $lg) {
+      margin-bottom: 7px;
+    }
+  }
+}

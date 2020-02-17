@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 0;
+  margin-bottom: 0;
 
   @media screen and (min-width: $sm) {
     width: 620px;
@@ -25,13 +26,26 @@
     @media screen and (min-width: $sm) {
       display: flex;
       justify-content: flex-start;
-      width: 50%;
+      width: calc(50% - 10px);
+      margin-right: 20px;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
     }
 
     @media screen and (min-width: $lg) {
       height: 555px;
       margin-bottom: 55px;
-      width: 33.33%;
+      width: calc(33.33% - 14px);
+
+      &:nth-child(2n) {
+        margin-right: 20px;
+      }
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
     }
   }
 }
