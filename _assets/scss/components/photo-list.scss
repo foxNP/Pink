@@ -3,11 +3,12 @@
   padding-left: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-top: 0;
   margin-bottom: 0;
+  align-items: center;
 
   @media screen and (min-width: $sm) {
+    align-items: stretch;
     width: 620px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -35,7 +36,6 @@
     }
 
     @media screen and (min-width: $lg) {
-      height: 555px;
       margin-bottom: 55px;
       width: calc(33.33% - 14px);
 

@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   background-color: #f0f0f0;
-  min-height: 757px;
   margin-right: -20px;
   margin-left: -20px;
   padding: 20px 20px 40px 20px;
@@ -10,7 +9,6 @@
   @media screen and (min-width: $sm) {
     flex-direction: row;
     justify-content: space-between;
-    min-height: 510px;
     padding: 55px 20px;
   }
 
@@ -22,31 +20,71 @@
     margin-left: 0;
   }
 
+  &__item {
+
+    @media screen and (min-width: $sm) {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #dddfe0;
+    }
+  }
+
   &__img {
     background-repeat: no-repeat;
     background-position: center center;
     height: 375px;
     width: 280px;
+    margin: 0 auto 40px auto;
 
     @media screen and (min-width: $sm) {
       height: 400px;
       width: 300px;
+      margin: 0;
     }
+  }
 
-    @media screen and (min-width: $lg) {
+  &__filters-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    border-bottom: 1px solid #dddfe0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $sm) {
+      border-bottom: none;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 0;
 
     }
   }
 
   &__filters {
-    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    margin: 0 auto;
 
     @media screen and (min-width: $sm) {
       margin-top: 0;
+      width: 100%;
+    }
+  }
+
+  &__progress-bar {
+    display: inline-block;
+    height: 2px;
+    background-color: #000000;
+    width: 100%;
+
+    @media screen and (min-width: $sm) {
+      margin-left: 30px;
     }
 
     @media screen and (min-width: $lg) {
-
+      margin-left: 48px;
     }
   }
 
