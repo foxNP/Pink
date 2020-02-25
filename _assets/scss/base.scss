@@ -50,6 +50,19 @@ body {
   }
 }
 
+.btn {
+  height: 55px;
+  border: 3px solid #ffffff;
+  border-radius: 27px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 18px;
+  font-weight: 700;
+  background-color: transparent;
+}
+
 .bold {
   font-weight: 700;
 }

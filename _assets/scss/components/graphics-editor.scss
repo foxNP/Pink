@@ -8,25 +8,14 @@
 
   @media screen and (min-width: $sm) {
     flex-direction: row;
-    justify-content: space-between;
     padding: 55px 20px;
   }
 
   @media screen and (min-width: $lg) {
-    min-height: 515px;
     padding-left: 80px;
     padding-right: 60px;
     margin-right: 0;
     margin-left: 0;
-  }
-
-  &__item {
-
-    @media screen and (min-width: $sm) {
-      display: flex;
-      align-items: center;
-      border-bottom: 1px solid #dddfe0;
-    }
   }
 
   &__img {
@@ -43,48 +32,18 @@
     }
   }
 
-  &__filters-list {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    border-bottom: 1px solid #dddfe0;
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 40px;
-
-    @media screen and (min-width: $sm) {
-      border-bottom: none;
-      flex-direction: column;
-      justify-content: space-between;
-      margin-bottom: 0;
-
-    }
-  }
-
-  &__filters {
+  &__content {
     display: flex;
     flex-direction: column;
-    width: 280px;
-    margin: 0 auto;
+    justify-content: space-between;
 
     @media screen and (min-width: $sm) {
-      margin-top: 0;
-      width: 100%;
-    }
-  }
-
-  &__progress-bar {
-    display: inline-block;
-    height: 2px;
-    background-color: #000000;
-    width: 100%;
-
-    @media screen and (min-width: $sm) {
-      margin-left: 30px;
+      padding-left: 45px;
+      width: calc(100% - 300px);
     }
 
     @media screen and (min-width: $lg) {
-      margin-left: 48px;
+      padding-left: 90px;
     }
   }
 
@@ -93,11 +52,44 @@
     flex-direction: column;
 
     @media screen and (min-width: $sm) {
-      flex-direction: row;
+      width: 100%;
     }
 
     @media screen and (min-width: $lg) {
+      flex-direction: row;
+    }
+  }
 
+  &__btn-post,
+  &__btn-cancel {
+
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: $sm) {
+      width: 260px;
+    }
+
+    @media screen and (min-width: $lg) {
+      width: 180px;
+    }
+  }
+
+  &__btn-post {
+    color: #d22856;
+    border-color: #d22856;
+  }
+
+  &__btn-post {
+    margin-bottom: 12px;
+
+    @media screen and (min-width: $sm) {
+      margin-bottom: 24px;
+    }
+
+    @media screen and (min-width: $lg) {
+      margin-bottom: 0;
     }
   }
 
