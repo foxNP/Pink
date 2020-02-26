@@ -1,23 +1,31 @@
 .tabs {
   display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #dddfe0;
+  margin-bottom: 40px;
+  margin-right: -20px;
+  margin-left: -20px;
+  padding-bottom: 35px;
+  width: calc(100% + 40px);
 
   @media screen and (min-width: $sm) {
+    border-bottom: none;
+    flex-direction: row;
     margin-top: 0;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: $lg) {
+    justify-content: flex-start;
   }
 
 
   &__header {
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid #dddfe0;
     margin-bottom: 40px;
-    margin-right: -20px;
-    margin-left: -20px;
-    padding-bottom: 40px;
-    width: calc(100% + 40px);
 
     @media screen and (min-width: $sm) {
-      border-bottom: none;
       flex-direction: column;
       justify-content: space-between;
       margin-right: 0;
@@ -40,6 +48,33 @@
       margin-right: 0;
       margin-left: 0;
       height: 70px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: $sm) {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+
+  &__content-item {
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width: $sm) {
+      border-bottom: 1px solid #dddfe0;
+      height: 70px;
+      padding-right: 20px;
+      padding-left: 30px;
+    }
+
+    @media screen and (min-width: $lg) {
+      padding-right: 30px;
+      padding-left: 50px;
     }
   }
 }

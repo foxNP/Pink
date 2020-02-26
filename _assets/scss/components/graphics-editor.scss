@@ -9,6 +9,7 @@
   @media screen and (min-width: $sm) {
     flex-direction: row;
     padding: 55px 20px;
+    justify-content: center;
   }
 
   @media screen and (min-width: $lg) {
@@ -39,7 +40,6 @@
 
     @media screen and (min-width: $sm) {
       padding-left: 45px;
-      width: calc(100% - 300px);
     }
 
     @media screen and (min-width: $lg) {
@@ -76,12 +76,24 @@
     }
   }
 
-  &__btn-post {
-    color: #d22856;
-    border-color: #d22856;
+  &__btn-cancel {
+    border-color: #dddfe0;
+    color: #dddfe0;
+  }
+
+  &__btn-cancel:hover {
+    border-color: #b5b9be;
+    color: #b5b9be;
+  }
+
+  &__btn-cancel:active {
+    background-color: #b5b9be;
+    color: #c8cbcf;
   }
 
   &__btn-post {
+    color: #d22856;
+    border-color: #d22856;
     margin-bottom: 12px;
 
     @media screen and (min-width: $sm) {
@@ -91,6 +103,16 @@
     @media screen and (min-width: $lg) {
       margin-bottom: 0;
     }
+  }
+
+  &__btn-post:hover {
+    background-color: #d22856;
+    color: #ffffff;
+  }
+
+  &__btn-post:active {
+    color: #de6183;
+    background-color: #d22856;
   }
 
 }
