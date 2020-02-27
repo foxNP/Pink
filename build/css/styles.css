@@ -369,7 +369,7 @@ body {
   @media screen and (min-width: 660px) {
     .page-text {
       font-size: 18px;
-      width: 450px;
+      width: 580px;
       margin-bottom: 75px; } }
   @media screen and (min-width: 1200px) {
     .page-text {
@@ -775,7 +775,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px; }
   @media screen and (min-width: 660px) {
     .page-heading__title {
       background: url(../img/heading-image-ms.png) center top no-repeat;
@@ -1686,10 +1688,10 @@ body {
         height: 70px; } }
   .tabs__content {
     display: flex;
-    justify-content: center; }
+    align-items: center;
+    flex-direction: column; }
     @media screen and (min-width: 660px) {
       .tabs__content {
-        flex-direction: column;
         justify-content: flex-start; } }
   .tabs__content-item {
     display: flex;
