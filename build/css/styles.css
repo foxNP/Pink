@@ -1694,10 +1694,11 @@ body {
       .tabs__content {
         justify-content: flex-start; } }
   .tabs__content-item {
-    display: flex;
+    display: none;
     align-items: center; }
     @media screen and (min-width: 660px) {
       .tabs__content-item {
+        display: flex;
         border-bottom: 1px solid #dddfe0;
         height: 70px;
         padding-right: 20px;
@@ -1706,6 +1707,8 @@ body {
       .tabs__content-item {
         padding-right: 30px;
         padding-left: 50px; } }
+    .tabs__content-item--active {
+      display: flex; }
 
 .progress {
   position: relative;
@@ -1726,7 +1729,7 @@ body {
     border: 2px solid #d22856;
     position: absolute;
     top: -6px;
-    right: 44px; }
+    left: 0; }
 
 .photo-page__section-list {
   margin-bottom: 22px; }

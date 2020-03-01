@@ -8,7 +8,9 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  },
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-pagebuilder": "https://github.com/arctic-hare/gulp-pagebuilder",

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+[snp tpl="template/head.html" title="Pink Promo" ]
+<body>
+[snp tpl="template/header.html" ]
+<main class="main">
+    <section class="page-heading">
+        <div class="page-heading__title">
+            <h1>
+                Конкурс на самое безбашенное<br/> путешествие с Пинк
+            </h1>
+        </div>
+        <p class="page-text">
+            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+            Пожалуйста, заполните форму ниже:
+        </p>
+    </section>
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="col">
+                    <label class="c-input">
+                        <span class="c-input__label">Фамилия:</span>
+                        <div>
+                            <input type="text" placeholder="Укажите фамилию *" required>
+                            <div class="c-input__error">Поле обязательно для заполнения</div>
+                        </div>
+                    </label>
+
+                    <label class="c-input">
+                        <span class="c-input__label">Имя:</span>
+                        <div>
+                            <input type="text" placeholder="Введите ваше имя *" required>
+                            <div class="c-input__error">Поле обязательно для заполнения</div>
+                        </div>
+                    </label>
+
+                    <label class="c-input">
+                        <span class="c-input__label">Отчество:</span>
+                        <div>
+                            <input type="text" placeholder="Ну и отчество тоже" required>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="col">
+                    <div class=fieldset" data-legend="С каким приложением путешествовали?">
+                        <div class="c-radio-group">
+                            <label class="c-radio">
+                                <input type="radio" name="app-name" value="iOS" checked>
+                                <span class="c-radio__input"></span>
+                                <span class="c-radio__label">
+                                Pink для iOS
+                            </span>
+                            </label>
+                            <label class="c-radio">
+                                <input type="radio" name="app-name" value="Android">
+                                <span class="c-radio__input"></span>
+                                <span class="c-radio__label">
+                                Pink на Android
+                            </span>
+                            </label>
+                            <label class="c-radio">
+                                <input type="radio" name="app-name" value="Windows">
+                                <span class="c-radio__input"></span>
+                                <span class="c-radio__label">
+                                Windows
+                            </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=fieldset" data-legend="Контактная информация">
+                <div class="row">
+                    <div class="col">
+                        <label>
+                            <input type="text" placeholder="Номер, пожалуйста">
+                            Номер телефона
+                        </label>
+                    </div>
+                    <div class="col">
+                        <label>
+                            <input type="text" placeholder="Введите почту *" required>
+                            Адрес почты
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <legend>Ваши безбашенные достижения в путешествии</legend>
+                <ul>
+                    <li>
+                        <label>
+                            <input class="visually-hidden" type="checkbox" name="" checked>
+                            Сделал селфи с акулой
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input class="visually-hidden" type="checkbox" name="">
+                            Видел Чака Норриса
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input class="visually-hidden" type="checkbox" name="" checked>
+                            Удержал башню
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input class="visually-hidden" type="checkbox" name="" checked>
+                            Обгорел на пляже
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input class="visually-hidden" type="checkbox" name="">
+                            Накупил сувениров
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input class="visually-hidden" type="checkbox" name="">
+                            Разгромил отель
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+            <fieldset>
+                <legend>Опишите свои эмоции</legend>
+                <textarea cols="80" rows="3">
+
+        </textarea>
+            </fieldset>
+            <button type="submit" class="">Отправить форму</button>
+            <span>* — обязательные для заполнения поля</span>
+        </form>
+    </div>
+</main>
+[snp tpl="template/footer.html" ]
+</body>
+</html>
