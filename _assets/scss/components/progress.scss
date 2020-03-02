@@ -3,14 +3,12 @@
   width: 240px;
   height: 2px;
   background-color: #000000;
+  margin: 0 auto;
 
   @media screen and (min-width: $sm) {
-    width: 200px;
+    width: 100%;
   }
 
-  @media screen and (min-width: $lg) {
-    width: 290px;
-  }
 
   &__bar {
     width: 15px;

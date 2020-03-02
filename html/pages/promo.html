@@ -75,68 +75,81 @@
             <div class=fieldset" data-legend="Контактная информация">
                 <div class="row">
                     <div class="col">
-                        <label>
-                            <input type="text" placeholder="Номер, пожалуйста">
-                            Номер телефона
+                        <label class="c-input">
+                            <div>
+                                <input type="tel" placeholder="Номер, пожалуйста" required>
+                            </div>
+                            <span class="c-input__label">Номер телефона</span>
                         </label>
                     </div>
                     <div class="col">
-                        <label>
-                            <input type="text" placeholder="Введите почту *" required>
-                            Адрес почты
+                        <label class="c-input">
+                            <div>
+                                <input type="email" placeholder="Введите почту *" required>
+                                <div class="c-input__error">Поле обязательно для заполнения</div>
+                            </div>
+                            <span class="c-input__label">Адрес почты</span>
                         </label>
                     </div>
                 </div>
             </div>
-
-            <div>
-                <legend>Ваши безбашенные достижения в путешествии</legend>
-                <ul>
-                    <li>
-                        <label>
-                            <input class="visually-hidden" type="checkbox" name="" checked>
-                            Сделал селфи с акулой
-                        </label>
-                    </li>
-                    <li>
-                        <label>
-                            <input class="visually-hidden" type="checkbox" name="">
-                            Видел Чака Норриса
-                        </label>
-                    </li>
-                    <li>
-                        <label>
-                            <input class="visually-hidden" type="checkbox" name="" checked>
-                            Удержал башню
-                        </label>
-                    </li>
-                    <li>
-                        <label>
-                            <input class="visually-hidden" type="checkbox" name="" checked>
-                            Обгорел на пляже
-                        </label>
-                    </li>
-                    <li>
-                        <label>
-                            <input class="visually-hidden" type="checkbox" name="">
-                            Накупил сувениров
-                        </label>
-                    </li>
-                    <li>
-                        <label>
-                            <input class="visually-hidden" type="checkbox" name="">
-                            Разгромил отель
-                        </label>
-                    </li>
-                </ul>
+            <div class=fieldset" data-legend="Ваши безбашенные достижения в путешествии">
+                <div class="c-checkbox-group">
+                    <div class="row">
+                        <div class="col">
+                            <label class="c-checkbox">
+                                <input type="checkbox" name="events" value="option-1" checked>
+                                <span class="c-checkbox__input"></span>
+                                <span class="c-radio__label">
+                                Сделал селфи с акулой
+                                </span>
+                            </label>
+                            <label class="c-checkbox">
+                                <input type="checkbox" name="events" value="option-2" checked>
+                                <span class="c-checkbox__input"></span>
+                                <span class="c-radio__label">
+                                Обгорел на пляже
+                            </span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label class="c-checkbox">
+                                <input type="checkbox" name="events" value="option-3">
+                                <span class="c-checkbox__input"></span>
+                                <span class="c-radio__label">
+                                Видел Чака Норриса
+                            </span>
+                            </label>
+                            <label class="c-checkbox">
+                                <input type="checkbox" name="events" value="option-4">
+                                <span class="c-checkbox__input"></span>
+                                <span class="c-radio__label">
+                                Накупил сувениров
+                            </span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label class="c-checkbox">
+                                <input type="checkbox" name="events" value="option-5" checked>
+                                <span class="c-checkbox__input"></span>
+                                <span class="c-radio__label">
+                                Удержал башню
+                            </span>
+                            </label>
+                            <label class="c-checkbox">
+                                <input type="checkbox" name="events" value="option-6">
+                                <span class="c-checkbox__input"></span>
+                                <span class="c-radio__label">
+                                Разгромил отель
+                            </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <fieldset>
-                <legend>Опишите свои эмоции</legend>
-                <textarea cols="80" rows="3">
-
-        </textarea>
-            </fieldset>
+            <div class=fieldset" data-legend="Опишите свои эмоции">
+                <textarea rows="4" placeholder="Можно прям в красках, не стесняясь в выражениях" name="impressions"></textarea>
+            </div>
             <button type="submit" class="">Отправить форму</button>
             <span>* — обязательные для заполнения поля</span>
         </form>

@@ -9,3 +9,22 @@
   }
 }
 
+body {
+  min-width: 320px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: OpenSans, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: none;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex-grow: 1;
+}

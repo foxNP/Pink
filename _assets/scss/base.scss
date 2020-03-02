@@ -8,25 +8,6 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  min-width: 320px;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  font-family: OpenSans, Arial, sans-serif;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 400;
-  color: #000000;
-  text-transform: none;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.main {
-  flex-grow: 1;
-}
 
 .page-text {
   font-size: 14px;
@@ -48,19 +29,6 @@ body {
     width: 570px;
     margin-bottom: 85px;
   }
-}
-
-.btn {
-  height: 55px;
-  border: 3px solid #ffffff;
-  border-radius: 27px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  line-height: 18px;
-  font-weight: 700;
-  background-color: transparent;
 }
 
 .bold {
