@@ -28,3 +28,25 @@ body {
 .main {
   flex-grow: 1;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+
+  @media screen and (min-width: $lg) {
+    flex-direction: row;
+  }
+}
+
+.col {
+  flex-grow: 1;
+}

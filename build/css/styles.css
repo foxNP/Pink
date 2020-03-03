@@ -349,6 +349,23 @@ body {
 .main {
   flex-grow: 1; }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px; }
+
+.row {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+  @media screen and (min-width: 1200px) {
+    .row {
+      flex-direction: row; } }
+
+.col {
+  flex-grow: 1; }
+
 html {
   margin: 0;
   padding: 0;
@@ -698,28 +715,6 @@ html {
         margin-bottom: 52px;
         font-size: 50px;
         line-height: 60px; } }
-  .get-app__btn {
-    width: 280px;
-    color: #ffffff;
-    text-decoration: none;
-    margin-bottom: 32px;
-    margin-top: 28px; }
-    @media screen and (min-width: 660px) {
-      .get-app__btn {
-        width: 100%;
-        margin-bottom: 47px;
-        margin-top: 0; } }
-    @media screen and (min-width: 1200px) {
-      .get-app__btn {
-        font-size: 21px;
-        margin-bottom: 67px;
-        margin-top: 0; } }
-  .get-app__btn:hover {
-    color: #d22856;
-    background-color: #ffffff; }
-  .get-app__btn:active {
-    color: rgba(240, 10, 86, 0.7);
-    background-color: #ffffff; }
   .get-app__icons {
     list-style: none;
     padding-left: 0;
@@ -1690,53 +1685,122 @@ html {
   align-items: center;
   line-height: 18px;
   font-weight: 700;
-  background-color: transparent; }
+  background-color: transparent;
+  padding: 0; }
 
-.btn-post,
-.btn-cancel {
+.btn--post,
+.btn--cancel {
   width: 280px;
   margin-left: auto;
   margin-right: auto; }
   @media screen and (min-width: 660px) {
-    .btn-post,
-    .btn-cancel {
+    .btn--post,
+    .btn--cancel {
       width: 260px; } }
   @media screen and (min-width: 1200px) {
-    .btn-post,
-    .btn-cancel {
+    .btn--post,
+    .btn--cancel {
       width: 183px; } }
 
-.btn-cancel {
+.btn--cancel {
   border-color: #dddfe0;
   color: #dddfe0; }
 
-.btn-cancel:hover {
+.btn--cancel:hover {
   border-color: #b5b9be;
   color: #b5b9be; }
 
-.btn-cancel:active {
+.btn--cancel:active {
   background-color: #b5b9be;
   color: #c8cbcf; }
 
-.btn-post {
+.btn--post {
   color: #d22856;
   border-color: #d22856;
   margin-bottom: 12px; }
   @media screen and (min-width: 660px) {
-    .btn-post {
+    .btn--post {
       margin-bottom: 24px; } }
   @media screen and (min-width: 1200px) {
-    .btn-post {
+    .btn--post {
       margin-bottom: 0;
       margin-right: 45px; } }
 
-.btn-post:hover {
+.btn--post:hover {
   background-color: #d22856;
   color: #ffffff; }
 
-.btn-post:active {
+.btn--post:active {
   color: #de6183;
   background-color: #d22856; }
+
+.btn--get-app {
+  width: 280px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 32px;
+  margin-top: 28px; }
+  @media screen and (min-width: 660px) {
+    .btn--get-app {
+      width: 100%;
+      margin-bottom: 47px;
+      margin-top: 0; } }
+  @media screen and (min-width: 1200px) {
+    .btn--get-app {
+      font-size: 21px;
+      margin-bottom: 67px;
+      margin-top: 0; } }
+
+.btn--get-app:hover {
+  color: #d22856;
+  background-color: #ffffff; }
+
+.btn--get-app:active {
+  color: rgba(240, 10, 86, 0.7);
+  background-color: #ffffff; }
+
+.btn-submit {
+  background-color: #2aab6d;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 100%;
+  height: 63px;
+  line-height: 30px;
+  border: none;
+  padding: 0;
+  font-weight: 700; }
+  @media screen and (min-width: 660px) {
+    .btn-submit {
+      width: 300px; } }
+
+.fieldset {
+  width: 100%;
+  border: 2px solid #dddfe0;
+  position: relative; }
+  @media screen and (min-width: 660px) {
+    .fieldset {
+      margin-bottom: 67px;
+      padding-top: 40px; } }
+
+.fieldset:before {
+  content: attr(data-legend);
+  font-size: 14px;
+  line-height: 18px;
+  color: #d22856;
+  text-transform: uppercase; }
+  @media screen and (min-width: 660px) {
+    .fieldset:before {
+      line-height: 30px;
+      white-space: nowrap;
+      position: absolute;
+      top: -16px;
+      background-color: #ffffff;
+      padding: 0 32px;
+      left: 50%;
+      transform: translate(-50%, 0); } }
+  @media screen and (min-width: 1200px) {
+    .fieldset:before {
+      padding: 0 40px; } }
 
 .photo-page__section-list {
   margin-bottom: 22px; }
