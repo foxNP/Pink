@@ -14,10 +14,7 @@ html {
   line-height: 30px;
   text-align: center;
   width: 250px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 0;
-  margin-bottom: 50px;
+  margin: 0 auto 50px auto;
 
   @media screen and (min-width: $sm) {
     font-size: 18px;

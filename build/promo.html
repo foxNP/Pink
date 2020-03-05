@@ -54,8 +54,7 @@
             Пожалуйста, заполните форму ниже:
         </p>
     </section>
-    <div class="container">
-        <form>
+    <form>
             <div class="row">
                 <div class="col">
                     <label class="c-input">
@@ -115,19 +114,19 @@
                 <div class="row">
                     <div class="col">
                         <label class="c-input">
+                            <span class="c-input__label">Номер телефона</span>
                             <div>
                                 <input type="tel" placeholder="Номер, пожалуйста" required>
                             </div>
-                            <span class="c-input__label">Номер телефона</span>
                         </label>
                     </div>
                     <div class="col">
                         <label class="c-input">
+                            <span class="c-input__label">Адрес почты</span>
                             <div>
                                 <input type="email" placeholder="Введите почту *" required>
                                 <div class="c-input__error">Поле обязательно для заполнения</div>
                             </div>
-                            <span class="c-input__label">Адрес почты</span>
                         </label>
                     </div>
                 </div>
@@ -187,11 +186,12 @@
                 </div>
             </div>
             <div class="fieldset" data-legend="Опишите свои эмоции">
-                <textarea rows="4" placeholder="Можно прям в красках, не стесняясь в выражениях" name="impressions"></textarea>
+                <textarea rows="4" placeholder="Можно прям в красках, не стесняясь в выражениях"
+                          name="impressions"></textarea>
             </div>
             <button type="submit" class="btn-submit">Отправить форму</button>
             <span>* — обязательные для заполнения поля</span>
-        </form>
+    </form>
     </div>
     </div>
 </main>

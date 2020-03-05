@@ -1,19 +1,23 @@
 .fieldset {
   width: 100%;
-  border: 2px solid #dddfe0;
   position: relative;
 
   @media screen and (min-width: $sm) {
+    border: 2px solid #dddfe0;
     margin-bottom: 67px;
-    padding-top: 40px;
+    padding: 45px 60px;
   }
 }
 
 .fieldset:before {
-  content: attr(data-legend);font-size: 14px;
+  content: attr(data-legend);
+  display: block;
+  text-align: center;
+  font-size: 14px;
   line-height: 18px;
   color: #d22856;
   text-transform: uppercase;
+  padding: 35px 20px 15px 20px;
 
   @media screen and (min-width: $sm) {
     line-height: 30px;
@@ -28,6 +32,5 @@
 
   @media screen and (min-width: $lg) {
     padding: 0 40px;
-
   }
 }

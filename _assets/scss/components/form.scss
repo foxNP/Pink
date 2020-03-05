@@ -1,0 +1,53 @@
+form {
+
+}
+
+.c-input {
+
+  &__label {
+    font-size: 14px;
+    color: #d22856;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: 23px;
+    margin-bottom: 8px;
+    margin-top: 20px;
+  }
+
+  &__error {
+    display: none;
+  }
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  height: 63px;
+  width: 100%;
+  border: 2px solid #dddfe0;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.c-radio-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.c-radio,
+.c-checkbox {
+  height: 40px;
+  margin-bottom: 40px;
+}
+
+.c-checkbox-group .col {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  border: 2px solid #dddfe0;
+  padding: 20px;
+}

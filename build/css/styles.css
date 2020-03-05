@@ -353,7 +353,16 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media screen and (min-width: 660px) {
+    form {
+      max-width: 620px; } }
+  @media screen and (min-width: 1200px) {
+    form {
+      max-width: 940px; } }
 
 .row {
   display: flex;
@@ -379,10 +388,7 @@ html {
   line-height: 30px;
   text-align: center;
   width: 250px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 0;
-  margin-bottom: 50px; }
+  margin: 0 auto 50px auto; }
   @media screen and (min-width: 660px) {
     .page-text {
       font-size: 18px;
@@ -1775,19 +1781,22 @@ html {
 
 .fieldset {
   width: 100%;
-  border: 2px solid #dddfe0;
   position: relative; }
   @media screen and (min-width: 660px) {
     .fieldset {
+      border: 2px solid #dddfe0;
       margin-bottom: 67px;
-      padding-top: 40px; } }
+      padding: 45px 60px; } }
 
 .fieldset:before {
   content: attr(data-legend);
+  display: block;
+  text-align: center;
   font-size: 14px;
   line-height: 18px;
   color: #d22856;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding: 35px 20px 15px 20px; }
   @media screen and (min-width: 660px) {
     .fieldset:before {
       line-height: 30px;
@@ -1801,6 +1810,46 @@ html {
   @media screen and (min-width: 1200px) {
     .fieldset:before {
       padding: 0 40px; } }
+
+.c-input__label {
+  font-size: 14px;
+  color: #d22856;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: 23px;
+  margin-bottom: 8px;
+  margin-top: 20px; }
+
+.c-input__error {
+  display: none; }
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  height: 63px;
+  width: 100%;
+  border: 2px solid #dddfe0;
+  padding-left: 22px;
+  padding-right: 22px; }
+
+.c-radio-group {
+  display: flex;
+  flex-direction: column; }
+
+.c-radio,
+.c-checkbox {
+  height: 40px;
+  margin-bottom: 40px; }
+
+.c-checkbox-group .col {
+  display: flex;
+  flex-direction: column; }
+
+textarea {
+  width: 100%;
+  resize: none;
+  border: 2px solid #dddfe0;
+  padding: 20px; }
 
 .photo-page__section-list {
   margin-bottom: 22px; }
