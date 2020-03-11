@@ -51,146 +51,154 @@
         </div>
         <p class="page-text">
             Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-            Пожалуйста, заполните форму ниже:
+            <span class="ms-hidden">Пожалуйста, заполните форму ниже:</span>
         </p>
     </section>
     <form>
+        <div class="row background-gray">
+            <div class="col">
+                <label class="c-input">
+                    <span class="c-input__label">Фамилия:</span>
+                    <div>
+                        <input type="text" placeholder="Укажите фамилию *" required>
+                        <div class="c-input__error">Поле обязательно для заполнения</div>
+                    </div>
+                </label>
+
+                <label class="c-input">
+                    <span class="c-input__label">Имя:</span>
+                    <div>
+                        <input type="text" placeholder="Введите ваше имя *" required>
+                        <div class="c-input__error">Поле обязательно для заполнения</div>
+                    </div>
+                </label>
+
+                <label class="c-input">
+                    <span class="c-input__label">Отчество:</span>
+                    <div>
+                        <input type="text" placeholder="Ну и отчество тоже" required>
+                    </div>
+                </label>
+            </div>
+
+            <div class="col">
+                <div class="fieldset" data-legend="С каким приложением путешествовали?">
+                    <div class="c-radio-group">
+                        <label class="c-radio">
+                            <input class="hidden" type="radio" name="app-name" value="iOS" checked>
+                            <span class="c-radio__input"></span>
+                            <span class="c-radio__label">
+                                Pink для iOS
+                            </span>
+                        </label>
+                        <label class="c-radio">
+                            <input class="hidden" type="radio" name="app-name" value="Android">
+                            <span class="c-radio__input"></span>
+                            <span class="c-radio__label">
+                                Pink на Android
+                            </span>
+                        </label>
+                        <label class="c-radio">
+                            <input class="hidden" type="radio" name="app-name" value="Windows">
+                            <span class="c-radio__input"></span>
+                            <span class="c-radio__label">
+                                Windows
+                            </span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fieldset fieldset--hide" data-legend="Контактная информация">
             <div class="row">
                 <div class="col">
                     <label class="c-input">
-                        <span class="c-input__label">Фамилия:</span>
+                        <span class="c-input__label">Номер телефона</span>
                         <div>
-                            <input type="text" placeholder="Укажите фамилию *" required>
-                            <div class="c-input__error">Поле обязательно для заполнения</div>
-                        </div>
-                    </label>
-
-                    <label class="c-input">
-                        <span class="c-input__label">Имя:</span>
-                        <div>
-                            <input type="text" placeholder="Введите ваше имя *" required>
-                            <div class="c-input__error">Поле обязательно для заполнения</div>
-                        </div>
-                    </label>
-
-                    <label class="c-input">
-                        <span class="c-input__label">Отчество:</span>
-                        <div>
-                            <input type="text" placeholder="Ну и отчество тоже" required>
+                            <input type="tel" placeholder="Номер, пожалуйста" required>
                         </div>
                     </label>
                 </div>
-
                 <div class="col">
-                    <div class="fieldset" data-legend="С каким приложением путешествовали?">
-                        <div class="c-radio-group">
-                            <label class="c-radio">
-                                <input type="radio" name="app-name" value="iOS" checked>
-                                <span class="c-radio__input"></span>
-                                <span class="c-radio__label">
-                                Pink для iOS
-                            </span>
-                            </label>
-                            <label class="c-radio">
-                                <input type="radio" name="app-name" value="Android">
-                                <span class="c-radio__input"></span>
-                                <span class="c-radio__label">
-                                Pink на Android
-                            </span>
-                            </label>
-                            <label class="c-radio">
-                                <input type="radio" name="app-name" value="Windows">
-                                <span class="c-radio__input"></span>
-                                <span class="c-radio__label">
-                                Windows
-                            </span>
-                            </label>
+                    <label class="c-input">
+                        <span class="c-input__label">Адрес почты</span>
+                        <div>
+                            <input type="email" placeholder="Введите почту *" required>
+                            <div class="c-input__error">Поле обязательно для заполнения</div>
                         </div>
-                    </div>
+                    </label>
                 </div>
             </div>
-
-            <div class="fieldset" data-legend="Контактная информация">
+        </div>
+        <div class="fieldset background-gray" data-legend="Ваши безбашенные достижения в путешествии">
+            <div class="c-checkbox-group">
                 <div class="row">
                     <div class="col">
-                        <label class="c-input">
-                            <span class="c-input__label">Номер телефона</span>
-                            <div>
-                                <input type="tel" placeholder="Номер, пожалуйста" required>
-                            </div>
+                        <label class="c-checkbox">
+                            <input type="checkbox" name="events" value="option-1" checked>
+                            <span class="c-checkbox__input"></span>
+                            <span class="c-checkbox__label">
+                                Сделал селфи с акулой
+                                </span>
+                        </label>
+                        <label class="c-checkbox">
+                            <input type="checkbox" name="events" value="option-2" checked>
+                            <span class="c-checkbox__input"></span>
+                            <span class="c-checkbox__label">
+                                Обгорел на пляже
+                            </span>
                         </label>
                     </div>
                     <div class="col">
-                        <label class="c-input">
-                            <span class="c-input__label">Адрес почты</span>
-                            <div>
-                                <input type="email" placeholder="Введите почту *" required>
-                                <div class="c-input__error">Поле обязательно для заполнения</div>
-                            </div>
+                        <label class="c-checkbox">
+                            <input type="checkbox" name="events" value="option-3">
+                            <span class="c-checkbox__input"></span>
+                            <span class="c-checkbox__label">
+                                Видел Чака Норриса
+                            </span>
+                        </label>
+                        <label class="c-checkbox">
+                            <input type="checkbox" name="events" value="option-4">
+                            <span class="c-checkbox__input"></span>
+                            <span class="c-checkbox__label">
+                                Накупил сувениров
+                            </span>
+                        </label>
+                    </div>
+                    <div class="col">
+                        <label class="c-checkbox">
+                            <input type="checkbox" name="events" value="option-5" checked>
+                            <span class="c-checkbox__input"></span>
+                            <span class="c-checkbox__label">
+                                Удержал башню
+                            </span>
+                        </label>
+                        <label class="c-checkbox">
+                            <input type="checkbox" name="events" value="option-6">
+                            <span class="c-checkbox__input"></span>
+                            <span class="c-checkbox__label">
+                                Разгромил отель
+                            </span>
                         </label>
                     </div>
                 </div>
             </div>
-            <div class="fieldset" data-legend="Ваши безбашенные достижения в путешествии">
-                <div class="c-checkbox-group">
-                    <div class="row">
-                        <div class="col">
-                            <label class="c-checkbox">
-                                <input type="checkbox" name="events" value="option-1" checked>
-                                <span class="c-checkbox__input"></span>
-                                <span class="c-radio__label">
-                                Сделал селфи с акулой
-                                </span>
-                            </label>
-                            <label class="c-checkbox">
-                                <input type="checkbox" name="events" value="option-2" checked>
-                                <span class="c-checkbox__input"></span>
-                                <span class="c-radio__label">
-                                Обгорел на пляже
-                            </span>
-                            </label>
-                        </div>
-                        <div class="col">
-                            <label class="c-checkbox">
-                                <input type="checkbox" name="events" value="option-3">
-                                <span class="c-checkbox__input"></span>
-                                <span class="c-radio__label">
-                                Видел Чака Норриса
-                            </span>
-                            </label>
-                            <label class="c-checkbox">
-                                <input type="checkbox" name="events" value="option-4">
-                                <span class="c-checkbox__input"></span>
-                                <span class="c-radio__label">
-                                Накупил сувениров
-                            </span>
-                            </label>
-                        </div>
-                        <div class="col">
-                            <label class="c-checkbox">
-                                <input type="checkbox" name="events" value="option-5" checked>
-                                <span class="c-checkbox__input"></span>
-                                <span class="c-radio__label">
-                                Удержал башню
-                            </span>
-                            </label>
-                            <label class="c-checkbox">
-                                <input type="checkbox" name="events" value="option-6">
-                                <span class="c-checkbox__input"></span>
-                                <span class="c-radio__label">
-                                Разгромил отель
-                            </span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="fieldset" data-legend="Опишите свои эмоции">
+        </div>
+        <div class="fieldset" data-legend="Опишите свои эмоции">
+            <div class="row">
                 <textarea rows="4" placeholder="Можно прям в красках, не стесняясь в выражениях"
                           name="impressions"></textarea>
             </div>
-            <button type="submit" class="btn-submit">Отправить форму</button>
-            <span>* — обязательные для заполнения поля</span>
+        </div>
+        <div class="row row--sm">
+            <div class="col">
+                <button type="submit" class="btn-submit">Отправить форму</button>
+            </div>
+            <div class="col col--sm">
+                <span><span class="color-pink">*</span> — обязательные <span class="ms-hidden">для заполнения</span> поля</span>
+            </div>
+        </div>
     </form>
     </div>
     </div>

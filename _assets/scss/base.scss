@@ -8,12 +8,11 @@ html {
   box-sizing: inherit;
 }
 
-
 .page-text {
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-  width: 250px;
+  width: 290px;
   margin: 0 auto 50px auto;
 
   @media screen and (min-width: $sm) {
@@ -34,4 +33,28 @@ html {
 
 .light {
   font-weight: 300;
+}
+
+.ms-hidden {
+  display: none;
+
+  @media screen and (min-width: $lg) {
+    display: inline;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.color-pink {
+  color: #d22856;
+}
+
+.background-gray {
+  background-color: #f0f0f0;
+
+  @media screen and (min-width: $sm) {
+    background-color: #ffffff;
+  }
 }

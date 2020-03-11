@@ -1,5 +1,18 @@
 form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 
+  @media screen and (min-width: $sm) {
+    max-width: 620px;
+  }
+
+  @media screen and (min-width: $lg) {
+    max-width: 940px;
+  }
 }
 
 .c-input {
@@ -10,8 +23,8 @@ form {
     text-transform: uppercase;
     display: inline-block;
     margin-left: 23px;
-    margin-bottom: 8px;
-    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-top: 18px;
   }
 
   &__error {
@@ -29,15 +42,38 @@ input[type="email"] {
   padding-right: 22px;
 }
 
-.c-radio-group {
+.c-radio-group,
+.c-checkbox-group{
   display: flex;
   flex-direction: column;
+  padding-top: 25px;
 }
 
-.c-radio,
+.c-radio {
+  position: relative;
+  height: 40px;
+  margin-bottom: 35px;
+  padding-left: 70px;
+
+  &__label:before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 39px;
+    height: 39px;
+    background-color: #ffffff;
+    border: 2px solid #dddfe0;
+    border-radius: 50%;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .c-checkbox {
   height: 40px;
-  margin-bottom: 40px;
 }
 
 .c-checkbox-group .col {

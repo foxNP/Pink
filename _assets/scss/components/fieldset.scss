@@ -34,3 +34,12 @@
     padding: 0 40px;
   }
 }
+
+.fieldset--hide:before {
+  display: none;
+
+  @media screen and (min-width: $sm) {
+    display: block;
+  }
+}
+
