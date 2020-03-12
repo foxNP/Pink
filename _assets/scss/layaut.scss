@@ -74,4 +74,18 @@ body {
       }
     }
   }
+
+  &--lg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &--lg .c-input {
+
+    @media screen and (min-width: $lg) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }

@@ -56,10 +56,10 @@
     </section>
     <form>
         <div class="row background-gray">
-            <div class="col">
+            <div class="col col--lg">
                 <label class="c-input">
                     <span class="c-input__label">Фамилия:</span>
-                    <div>
+                    <div class="c-input__form">
                         <input type="text" placeholder="Укажите фамилию *" required>
                         <div class="c-input__error">Поле обязательно для заполнения</div>
                     </div>
@@ -67,7 +67,7 @@
 
                 <label class="c-input">
                     <span class="c-input__label">Имя:</span>
-                    <div>
+                    <div class="c-input__form">
                         <input type="text" placeholder="Введите ваше имя *" required>
                         <div class="c-input__error">Поле обязательно для заполнения</div>
                     </div>
@@ -75,7 +75,7 @@
 
                 <label class="c-input">
                     <span class="c-input__label">Отчество:</span>
-                    <div>
+                    <div class="c-input__form">
                         <input type="text" placeholder="Ну и отчество тоже" required>
                     </div>
                 </label>
@@ -85,22 +85,19 @@
                 <div class="fieldset" data-legend="С каким приложением путешествовали?">
                     <div class="c-radio-group">
                         <label class="c-radio">
-                            <input class="hidden" type="radio" name="app-name" value="iOS" checked>
-                            <span class="c-radio__input"></span>
+                            <input class="hidden c-radio__input" type="radio" name="app-name" value="iOS" checked>
                             <span class="c-radio__label">
                                 Pink для iOS
                             </span>
                         </label>
                         <label class="c-radio">
-                            <input class="hidden" type="radio" name="app-name" value="Android">
-                            <span class="c-radio__input"></span>
+                            <input class="hidden c-radio__input" type="radio" name="app-name" value="Android">
                             <span class="c-radio__label">
                                 Pink на Android
                             </span>
                         </label>
                         <label class="c-radio">
-                            <input class="hidden" type="radio" name="app-name" value="Windows">
-                            <span class="c-radio__input"></span>
+                            <input class="hidden c-radio__input" type="radio" name="app-name" value="Windows">
                             <span class="c-radio__label">
                                 Windows
                             </span>
@@ -136,15 +133,13 @@
                 <div class="row">
                     <div class="col">
                         <label class="c-checkbox">
-                            <input type="checkbox" name="events" value="option-1" checked>
-                            <span class="c-checkbox__input"></span>
+                            <input class="hidden c-checkbox__input" type="checkbox" name="events" value="option-1" checked>
                             <span class="c-checkbox__label">
                                 Сделал селфи с акулой
                                 </span>
                         </label>
                         <label class="c-checkbox">
-                            <input type="checkbox" name="events" value="option-2" checked>
-                            <span class="c-checkbox__input"></span>
+                            <input class="hidden c-checkbox__input" type="checkbox" name="events" value="option-2" checked>
                             <span class="c-checkbox__label">
                                 Обгорел на пляже
                             </span>
@@ -152,15 +147,13 @@
                     </div>
                     <div class="col">
                         <label class="c-checkbox">
-                            <input type="checkbox" name="events" value="option-3">
-                            <span class="c-checkbox__input"></span>
+                            <input class="hidden c-checkbox__input" type="checkbox" name="events" value="option-3">
                             <span class="c-checkbox__label">
                                 Видел Чака Норриса
                             </span>
                         </label>
                         <label class="c-checkbox">
-                            <input type="checkbox" name="events" value="option-4">
-                            <span class="c-checkbox__input"></span>
+                            <input class="hidden c-checkbox__input" type="checkbox" name="events" value="option-4">
                             <span class="c-checkbox__label">
                                 Накупил сувениров
                             </span>
@@ -168,15 +161,13 @@
                     </div>
                     <div class="col">
                         <label class="c-checkbox">
-                            <input type="checkbox" name="events" value="option-5" checked>
-                            <span class="c-checkbox__input"></span>
+                            <input class="hidden c-checkbox__input" type="checkbox" name="events" value="option-5" checked>
                             <span class="c-checkbox__label">
                                 Удержал башню
                             </span>
                         </label>
                         <label class="c-checkbox">
-                            <input type="checkbox" name="events" value="option-6">
-                            <span class="c-checkbox__input"></span>
+                            <input class="hidden c-checkbox__input" type="checkbox" name="events" value="option-6">
                             <span class="c-checkbox__label">
                                 Разгромил отель
                             </span>
@@ -187,7 +178,7 @@
         </div>
         <div class="fieldset" data-legend="Опишите свои эмоции">
             <div class="row">
-                <textarea rows="4" placeholder="Можно прям в красках, не стесняясь в выражениях"
+                <textarea placeholder="Можно прям в красках, не стесняясь в выражениях"
                           name="impressions"></textarea>
             </div>
         </div>
