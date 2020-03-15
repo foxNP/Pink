@@ -35,26 +35,3 @@ html {
   font-weight: 300;
 }
 
-.ms-hidden {
-  display: none;
-
-  @media screen and (min-width: $lg) {
-    display: inline;
-  }
-}
-
-.hidden {
-  display: none;
-}
-
-.color-pink {
-  color: #d22856;
-}
-
-.background-gray {
-  background-color: #f0f0f0;
-
-  @media screen and (min-width: $sm) {
-    background-color: #ffffff;
-  }
-}

@@ -1,0 +1,27 @@
+.hidden {
+  display: none;
+}
+
+.color-pink {
+  color: #d22856;
+}
+.xs-none {
+
+  @media screen and (max-width: 659px) {
+    display: none;
+  }
+}
+
+.sm-none {
+
+  @media (min-width: $sm) and (max-width: 1199px)  {
+    display: none;
+  }
+}
+
+.lg-none {
+
+  @media screen and (min-width: $lg) {
+    display: none;
+  }
+}
