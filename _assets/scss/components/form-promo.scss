@@ -1,7 +1,5 @@
 .form-promo {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
 
   @media screen and (min-width: $sm) {
     display: flex;
@@ -18,6 +16,7 @@
 
     @media screen and (min-width: $sm) {
       order: 1;
+      margin-bottom: 65px;
     }
 
     @media screen and (min-width: $lg) {
@@ -33,13 +32,18 @@
     background-color: #f0f0f0;
     margin-right: -20px;
     margin-left: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
 
     @media screen and (min-width: $sm) {
       order: 2;
       background-color: #ffffff;
       margin-right: 0;
       margin-left: 0;
+      margin-bottom: 65px;
       width: 100%;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     @media screen and (min-width: $lg) {
@@ -53,7 +57,51 @@
 
     @media screen and (min-width: $sm) {
       order: 3;
+      margin-bottom: 65px;
     }
+
+    .fieldset {
+
+      @media screen and (min-width: $lg) {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    .c-input {
+
+      @media screen and (min-width: $sm) {
+        display: flex;
+        flex-direction: column;
+      }
+
+      @media screen and (min-width: $lg) {
+        width: 100%;
+        flex-grow: 1;
+      }
+
+      &__label {
+
+        @media screen and (min-width: $sm) {
+          order: 1;
+        }
+      }
+    }
+
+    .c-input:first-child {
+
+      @media screen and (min-width: $lg) {
+        margin-right: 35px;
+      }
+    }
+
+    .c-input:last-child {
+
+      @media screen and (min-width: $lg) {
+        margin-left: 35px;
+      }
+    }
+
   }
 
   &__achievements {
@@ -61,6 +109,8 @@
     background-color: #f0f0f0;
     margin-right: -20px;
     margin-left: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
 
     @media screen and (min-width: $sm) {
       width: 100%;
@@ -68,6 +118,9 @@
       background-color: #ffffff;
       margin-right: 0;
       margin-left: 0;
+      margin-bottom: 65px;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 
@@ -76,6 +129,7 @@
 
     @media screen and (min-width: $sm) {
       order: 5;
+      margin-bottom: 65px;
     }
   }
 
@@ -108,3 +162,4 @@
     }
   }
 }
+
