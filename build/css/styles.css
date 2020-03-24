@@ -511,6 +511,20 @@ body {
   height: 12px;
   width: 14px; }
 
+.i-mail {
+  display: inline-block;
+  background-image: url("../img/icons/i_mail.png");
+  background-repeat: no-repeat;
+  height: 63px;
+  width: 62px; }
+
+.i-phone {
+  display: inline-block;
+  background-image: url("../img/icons/i_phone.png");
+  background-repeat: no-repeat;
+  height: 63px;
+  width: 62px; }
+
 .header {
   background-color: rgba(0, 0, 0, 0.302);
   height: 66px;
@@ -2045,6 +2059,14 @@ body {
   @media screen and (min-width: 1200px) {
     .c-input textarea {
       height: 125px; } }
+
+.c-input div {
+  position: relative; }
+
+.c-input span {
+  position: absolute;
+  top: 0;
+  right: 0; }
 
 @media screen and (min-width: 660px) {
   .c-input--row {
