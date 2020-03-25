@@ -5,10 +5,26 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media screen and (min-width: $lg) {
     max-width: 940px;
+    align-items: center;
+  }
+
+  section {
+    padding-bottom: 40px;
+
+    @media screen and (min-width: $sm) {
+      padding-bottom: 65px;
+    }
+
+    @media screen and (min-width: $lg) {
+      padding-bottom: 0;
+      margin-bottom: 65px;
+    }
   }
 
   &__user {
@@ -16,7 +32,6 @@
 
     @media screen and (min-width: $sm) {
       order: 1;
-      margin-bottom: 65px;
     }
 
     @media screen and (min-width: $lg) {
@@ -40,7 +55,6 @@
       background-color: #ffffff;
       margin-right: 0;
       margin-left: 0;
-      margin-bottom: 65px;
       width: 100%;
       padding-left: 0;
       padding-right: 0;
@@ -57,7 +71,6 @@
 
     @media screen and (min-width: $sm) {
       order: 3;
-      margin-bottom: 65px;
     }
 
     .fieldset {
@@ -118,7 +131,6 @@
       background-color: #ffffff;
       margin-right: 0;
       margin-left: 0;
-      margin-bottom: 65px;
       padding-left: 0;
       padding-right: 0;
     }
@@ -129,7 +141,6 @@
 
     @media screen and (min-width: $sm) {
       order: 5;
-      margin-bottom: 65px;
     }
   }
 

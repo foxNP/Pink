@@ -35,7 +35,7 @@ body {
   flex-direction: column;
 
   @media screen and (min-width: $lg) {
-    width: 33.33%;
+    width: calc(33.33% - 30px);
   }
 
   &:last-child label:last-child {

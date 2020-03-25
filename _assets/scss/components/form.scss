@@ -166,6 +166,10 @@
       margin-bottom: 55px;
     }
 
+    &:last-child {
+      margin-bottom: 0;
+    }
+
     .c-input__label {
 
       @media screen and (min-width: $sm) {

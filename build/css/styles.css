@@ -384,7 +384,7 @@ body {
   flex-direction: column; }
   @media screen and (min-width: 1200px) {
     .col {
-      width: 33.33%; } }
+      width: calc(33.33% - 30px); } }
   .col:last-child label:last-child {
     margin-bottom: 0; }
 
@@ -1800,16 +1800,27 @@ body {
     .form-promo {
       display: flex;
       flex-wrap: wrap;
-      max-width: 620px; } }
+      max-width: 620px;
+      margin-left: auto;
+      margin-right: auto; } }
   @media screen and (min-width: 1200px) {
     .form-promo {
-      max-width: 940px; } }
+      max-width: 940px;
+      align-items: center; } }
+  .form-promo section {
+    padding-bottom: 40px; }
+    @media screen and (min-width: 660px) {
+      .form-promo section {
+        padding-bottom: 65px; } }
+    @media screen and (min-width: 1200px) {
+      .form-promo section {
+        padding-bottom: 0;
+        margin-bottom: 65px; } }
   .form-promo__user {
     width: 100%; }
     @media screen and (min-width: 660px) {
       .form-promo__user {
-        order: 1;
-        margin-bottom: 65px; } }
+        order: 1; } }
     @media screen and (min-width: 1200px) {
       .form-promo__user {
         padding-top: 5px;
@@ -1829,7 +1840,6 @@ body {
         background-color: #ffffff;
         margin-right: 0;
         margin-left: 0;
-        margin-bottom: 65px;
         width: 100%;
         padding-left: 0;
         padding-right: 0; } }
@@ -1841,8 +1851,7 @@ body {
     width: 100%; }
     @media screen and (min-width: 660px) {
       .form-promo__contacts {
-        order: 3;
-        margin-bottom: 65px; } }
+        order: 3; } }
     @media screen and (min-width: 1200px) {
       .form-promo__contacts .fieldset {
         display: flex;
@@ -1878,15 +1887,13 @@ body {
         background-color: #ffffff;
         margin-right: 0;
         margin-left: 0;
-        margin-bottom: 65px;
         padding-left: 0;
         padding-right: 0; } }
   .form-promo__emotions {
     width: 100%; }
     @media screen and (min-width: 660px) {
       .form-promo__emotions {
-        order: 5;
-        margin-bottom: 65px; } }
+        order: 5; } }
   .form-promo__footer {
     width: 100%;
     display: flex;
@@ -2076,6 +2083,9 @@ body {
 @media screen and (min-width: 1200px) {
   .c-input--row {
     margin-bottom: 55px; } }
+
+.c-input--row:last-child {
+  margin-bottom: 0; }
 
 @media screen and (min-width: 660px) {
   .c-input--row .c-input__label {
